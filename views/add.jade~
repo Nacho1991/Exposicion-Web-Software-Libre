@@ -1,0 +1,9 @@
+extends layout
+
+block content
+dadasdasd
+
+block scripts
+	script(src='/javascripts/bootstrap.min.js')
+	script(src='/javascripts/npm.js')
+	script(src='/javascripts/bootstrap.js')
