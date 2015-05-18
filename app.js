@@ -56,5 +56,7 @@ app.use(function(err, req, res, next) {
   });
 });
 
-
+app.listen(3000,function(){
+console.log("Express server listening on port %d in %s mode",app.adress,app.settings.env);
+});
 module.exports = app;
