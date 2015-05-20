@@ -1,0 +1,58 @@
+extends layout
+block content
+	nav(class="navbar navbar-default")
+		div(class="container-fluid")
+			div(class="navbar-header")
+				a(class="navbar-brand")|Universidad Técnica Nacional
+			div(class="collapse navbar-collapse")
+				ul(class="nav navbar-nav")
+					li(class="active")
+						a(href="#")|Dashboard
+				ul(class="nav navbar-nav navbar-right")
+					li(class="dropdown")
+						a(href="#", class="dropdown-toggle", data-toggle="dropdown",role="button", aria-expanded="false")|Nombre de usuario
+							span(class="caret")
+						ul(class="dropdown-menu")
+							li
+								a(href="#")|Cerrar sesión
+	div(class="container")
+		div(id="loginbox",style="margin-top:50px;",class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2")
+			div(class="panel panel-info")
+				div(class="panel-heading")
+					div(class="panel-title")|Actualizar usuario
+				div(class="panel-body")
+					div(class="input-group")
+					each val in usuarios
+						label(for="id")| N° Registro:
+						input(value = val.id,size="20", readonly ="",type="text", name="id", id='id').form-control
+					br
+					div(class="input-group")
+					each val in usuarios
+						label(for="nombre")| Nombre:
+						input(value = val.nombre,size="23",type="text", name="nombre", id='nombre').form-control
+					br
+					div(class="input-group")
+					each val in usuarios
+						label(for="apellidos")| Apellidos:
+						input(value = val.apellidos,size="22",type="text", name="apellidos", id='apellidos').form-control
+					br
+					div(class="input-group")
+					each val in usuarios
+						label(for="nombreusuario")|Nombre de usuario:
+						input(value = val.nombre_usuario,size="14",type="text", name="nombreusuario", id='nombreusuario').form-control
+					br
+					div(class="input-group")
+					each val in usuarios
+						label(for="contrasenna")|Contraseña:
+						input(value=val.contrasenna, size="20", type="password", name="contrasenna", id='contrasenna').form-control
+					div(class="input-group")
+					each val in usuarios
+						label(for="verificarcontrasenna")|Veri. Contraseña:
+						input(size="20", type="password", name="verificarcontrasenna", id='verificarcontrasenna').form-control
+				div(class="panel-footer")
+					center
+						button(class="btn btn-success",type="button")
+							span(aria-hidden="true" class="glyphicon glyphicon-chevron-left")|   Atrás
+						|	
+						button(class="btn btn-primary",type="button")
+							span(aria-hidden="true" class="glyphicon glyphicon-save")|   Guardar

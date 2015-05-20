@@ -15,6 +15,7 @@ connection.connect(function (err) {
         console.log("Error inesperado al intentar conectar la base de datos. Error: " + err);
     }
 });
+
 /* GET dashboard listing. */
 router.get('/', function (req, res, next) {
     connection.query("SELECT * FROM usuario", function (err, rows, fields) {

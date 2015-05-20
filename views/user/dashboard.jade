@@ -1,10 +1,48 @@
 extends layout
 
 block content
-	ul
-		each val in usuarios
-			li= val.nombre
-block scripts
-	script(src='/javascripts/bootstrap.min.js')
-	script(src='/javascripts/npm.js')
-	script(src='/javascripts/bootstrap.js')
+	nav(class="navbar navbar-default")
+		div(class="container-fluid")
+			div(class="navbar-header")
+				a(class="navbar-brand")|Universidad Técnica Nacional
+			div(class="collapse navbar-collapse")
+				ul(class="nav navbar-nav")
+					li(class="active")
+						a(href="#")|Dashboard
+				ul(class="nav navbar-nav navbar-right")
+					li(class="dropdown")
+						a(href="#", class="dropdown-toggle", data-toggle="dropdown",role="button", aria-expanded="false")|Nombre de usuario
+							span(class="caret")
+						ul(class="dropdown-menu")
+							li
+								a(href="#")|Cerrar sesión
+
+
+	div(class="container")
+		div(class="content")
+			button(class="btn btn-success")|Nuevo
+			br
+			br
+			table(class="table table-bordered table-hover" width="50%")
+				thead
+					tr
+						th ID
+						th Nombre
+						th Apellidos
+						th Nombre de usuario
+						th Contraseña
+						th Opciones
+				tbody
+				each val in usuarios
+					tr
+						td=val.id
+						td=val.nombre
+						td=val.apellidos
+						td=val.nombre_usuario
+						td=val.contrasenna
+						td
+							button(id=val.id,class="btn btn-primary")| Ver detalles
+							button(id=val.id,class="btn btn-warning")| Modificar
+							button(id=val.id,class="btn btn-danger")| Eliminar
+ 
+
