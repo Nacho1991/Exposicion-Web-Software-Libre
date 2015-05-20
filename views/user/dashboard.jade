@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	ul
+		each val in usuarios
+			li= val.nombre
+block scripts
+	script(src='/javascripts/bootstrap.min.js')
+	script(src='/javascripts/npm.js')
+	script(src='/javascripts/bootstrap.js')
