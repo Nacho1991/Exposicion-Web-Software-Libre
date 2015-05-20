@@ -1,0 +1,1664 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ignacio/.nvm/versions/v0.12.3/bin/node',
+1 verbose cli   '/home/ignacio/.nvm/versions/v0.12.3/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'db-migrate' ]
+2 info using npm@2.9.1
+3 info using node@v0.12.3
+4 verbose install initial load of /home/ignacio/proyecto/exposicion/package.json
+5 verbose installManyTop reading scoped package data from /home/ignacio/proyecto/exposicion/node_modules/body-parser/package.json
+6 verbose installManyTop reading scoped package data from /home/ignacio/proyecto/exposicion/node_modules/cookie-parser/package.json
+7 verbose installManyTop reading scoped package data from /home/ignacio/proyecto/exposicion/node_modules/debug/package.json
+8 verbose installManyTop reading scoped package data from /home/ignacio/proyecto/exposicion/node_modules/express/package.json
+9 verbose installManyTop reading scoped package data from /home/ignacio/proyecto/exposicion/node_modules/jade/package.json
+10 verbose installManyTop reading scoped package data from /home/ignacio/proyecto/exposicion/node_modules/morgan/package.json
+11 verbose installManyTop reading scoped package data from /home/ignacio/proyecto/exposicion/node_modules/mysql/package.json
+12 verbose installManyTop reading scoped package data from /home/ignacio/proyecto/exposicion/node_modules/serve-favicon/package.json
+13 verbose readDependencies loading dependencies from /home/ignacio/proyecto/exposicion/package.json
+14 silly cache add args [ 'db-migrate', null ]
+15 verbose cache add spec db-migrate
+16 silly cache add parsed spec { raw: 'db-migrate',
+16 silly cache add   scope: null,
+16 silly cache add   name: 'db-migrate',
+16 silly cache add   rawSpec: '',
+16 silly cache add   spec: '*',
+16 silly cache add   type: 'range' }
+17 silly addNamed db-migrate@*
+18 verbose addNamed "*" is a valid semver range for db-migrate
+19 silly addNameRange { name: 'db-migrate', range: '*', hasData: false }
+20 silly mapToRegistry name db-migrate
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/db-migrate
+24 verbose addNameRange registry:https://registry.npmjs.org/db-migrate not in flight; fetching
+25 verbose request uri https://registry.npmjs.org/db-migrate
+26 verbose request no auth needed
+27 info attempt registry request try #1 at 14:48:23
+28 verbose request id 8197f33e04ab5846
+29 http request GET https://registry.npmjs.org/db-migrate
+30 http 200 https://registry.npmjs.org/db-migrate
+31 silly get cb [ 200,
+31 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+31 silly get     etag: '"89JEA656YO1C3BHDICSORSTJX"',
+31 silly get     'content-type': 'application/json',
+31 silly get     'cache-control': 'max-age=60',
+31 silly get     'content-length': '91789',
+31 silly get     'accept-ranges': 'bytes',
+31 silly get     date: 'Mon, 18 May 2015 20:48:24 GMT',
+31 silly get     via: '1.1 varnish',
+31 silly get     age: '0',
+31 silly get     connection: 'keep-alive',
+31 silly get     'x-served-by': 'cache-jfk1028-JFK',
+31 silly get     'x-cache': 'HIT',
+31 silly get     'x-cache-hits': '1',
+31 silly get     'x-timer': 'S1431982104.075322,VS0,VE86',
+31 silly get     vary: 'Accept' } ]
+32 verbose get saving db-migrate to /home/ignacio/.npm/registry.npmjs.org/db-migrate/.cache.json
+33 silly addNameRange number 2 { name: 'db-migrate', range: '*', hasData: true }
+34 silly addNameRange versions [ 'db-migrate',
+34 silly addNameRange   [ '0.0.1',
+34 silly addNameRange     '0.0.2',
+34 silly addNameRange     '0.0.3',
+34 silly addNameRange     '0.0.4',
+34 silly addNameRange     '0.0.5',
+34 silly addNameRange     '0.0.6',
+34 silly addNameRange     '0.1.0',
+34 silly addNameRange     '0.1.1',
+34 silly addNameRange     '0.1.2',
+34 silly addNameRange     '0.1.3',
+34 silly addNameRange     '0.1.4',
+34 silly addNameRange     '0.1.5',
+34 silly addNameRange     '0.2.0',
+34 silly addNameRange     '0.2.1',
+34 silly addNameRange     '0.2.2',
+34 silly addNameRange     '0.2.3',
+34 silly addNameRange     '0.2.4',
+34 silly addNameRange     '0.2.5',
+34 silly addNameRange     '0.2.6',
+34 silly addNameRange     '0.2.7',
+34 silly addNameRange     '0.2.8',
+34 silly addNameRange     '0.3.0',
+34 silly addNameRange     '0.3.1',
+34 silly addNameRange     '0.3.2',
+34 silly addNameRange     '0.4.0',
+34 silly addNameRange     '0.4.1',
+34 silly addNameRange     '0.4.2',
+34 silly addNameRange     '0.5.0',
+34 silly addNameRange     '0.5.1',
+34 silly addNameRange     '0.5.2',
+34 silly addNameRange     '0.5.3',
+34 silly addNameRange     '0.5.4',
+34 silly addNameRange     '0.6.0',
+34 silly addNameRange     '0.6.1',
+34 silly addNameRange     '0.6.2',
+34 silly addNameRange     '0.6.3',
+34 silly addNameRange     '0.6.4',
+34 silly addNameRange     '0.7.0',
+34 silly addNameRange     '0.7.1',
+34 silly addNameRange     '0.8.0',
+34 silly addNameRange     '0.9.0',
+34 silly addNameRange     '0.9.1',
+34 silly addNameRange     '0.9.2',
+34 silly addNameRange     '0.9.3',
+34 silly addNameRange     '0.9.4',
+34 silly addNameRange     '0.9.5',
+34 silly addNameRange     '0.9.7',
+34 silly addNameRange     '0.9.8',
+34 silly addNameRange     '0.9.9',
+34 silly addNameRange     '0.9.10',
+34 silly addNameRange     '0.9.11',
+34 silly addNameRange     '0.9.12',
+34 silly addNameRange     '0.9.13',
+34 silly addNameRange     '0.9.14' ] ]
+35 silly addNamed db-migrate@0.9.14
+36 verbose addNamed "0.9.14" is a plain semver version for db-migrate
+37 silly mapToRegistry name db-migrate
+38 silly mapToRegistry using default registry
+39 silly mapToRegistry registry https://registry.npmjs.org/
+40 silly mapToRegistry uri https://registry.npmjs.org/db-migrate
+41 verbose addRemoteTarball https://registry.npmjs.org/db-migrate/-/db-migrate-0.9.14.tgz not in flight; adding
+42 verbose addRemoteTarball [ 'https://registry.npmjs.org/db-migrate/-/db-migrate-0.9.14.tgz',
+42 verbose addRemoteTarball   '3b2b79b31a842a46e8813d38c6bf640394c473a3' ]
+43 info retry fetch attempt 1 at 14:48:24
+44 info attempt registry request try #1 at 14:48:24
+45 http fetch GET https://registry.npmjs.org/db-migrate/-/db-migrate-0.9.14.tgz
+46 http fetch 200 https://registry.npmjs.org/db-migrate/-/db-migrate-0.9.14.tgz
+47 silly fetchAndShaCheck shasum 3b2b79b31a842a46e8813d38c6bf640394c473a3
+48 verbose addTmpTarball /tmp/npm-15602-c0f60b8e/registry.npmjs.org/db-migrate/-/db-migrate-0.9.14.tgz not in flight; adding
+49 verbose addTmpTarball already have metadata; skipping unpack for db-migrate@0.9.14
+50 silly cache afterAdd db-migrate@0.9.14
+51 verbose afterAdd /home/ignacio/.npm/db-migrate/0.9.14/package/package.json not in flight; writing
+52 verbose afterAdd /home/ignacio/.npm/db-migrate/0.9.14/package/package.json written
+53 silly install resolved [ { name: 'db-migrate',
+53 silly install resolved     description: 'Database migration framework for node.js',
+53 silly install resolved     author: { name: 'Jeff Kunkle' },
+53 silly install resolved     bin: { 'db-migrate': './bin/db-migrate' },
+53 silly install resolved     keywords: [ 'database', 'db', 'migrate', 'migration', 'sqlite', 'mysql' ],
+53 silly install resolved     version: '0.9.14',
+53 silly install resolved     engines: { node: '>=0.6.0' },
+53 silly install resolved     bugs: { url: 'https://github.com/kunklejr/node-db-migrate/issues' },
+53 silly install resolved     license: 'MIT',
+53 silly install resolved     repository:
+53 silly install resolved      { type: 'git',
+53 silly install resolved        url: 'https://github.com/kunklejr/node-db-migrate.git' },
+53 silly install resolved     dependencies:
+53 silly install resolved      { async: '~0.9.0',
+53 silly install resolved        dotenv: '~0.5.1',
+53 silly install resolved        'final-fs': '^1.6.0',
+53 silly install resolved        mkdirp: '~0.5.0',
+53 silly install resolved        moment: '~2.9.0',
+53 silly install resolved        mongodb: '^1.4.30',
+53 silly install resolved        mysql: '~2.5.4',
+53 silly install resolved        optimist: '~0.6.1',
+53 silly install resolved        'parse-database-url': '~0.2.2',
+53 silly install resolved        pg: '~4.2.0',
+53 silly install resolved        pkginfo: '~0.3.0',
+53 silly install resolved        semver: '~4.3.3',
+53 silly install resolved        sqlite3: '~3.0.4' },
+53 silly install resolved     devDependencies:
+53 silly install resolved      { code: '^1.3.0',
+53 silly install resolved        'db-meta': '~0.4.1',
+53 silly install resolved        lab: '^5.2.1',
+53 silly install resolved        rimraf: '~2.2.8',
+53 silly install resolved        vows: '0.8.0' },
+53 silly install resolved     scripts: { test: 'node node_modules/.bin/vows' },
+53 silly install resolved     gitHead: '9afc4cc480ba762548e5a77f2126cc0bbbceadc7',
+53 silly install resolved     homepage: 'https://github.com/kunklejr/node-db-migrate',
+53 silly install resolved     _id: 'db-migrate@0.9.14',
+53 silly install resolved     _shasum: '3b2b79b31a842a46e8813d38c6bf640394c473a3',
+53 silly install resolved     _from: 'db-migrate@*',
+53 silly install resolved     _npmVersion: '2.5.1',
+53 silly install resolved     _nodeVersion: '0.12.1',
+53 silly install resolved     _npmUser: { name: 'wzrdtales', email: 'magic@wizardtales.com' },
+53 silly install resolved     maintainers: [ [Object], [Object] ],
+53 silly install resolved     dist:
+53 silly install resolved      { shasum: '3b2b79b31a842a46e8813d38c6bf640394c473a3',
+53 silly install resolved        tarball: 'http://registry.npmjs.org/db-migrate/-/db-migrate-0.9.14.tgz' },
+53 silly install resolved     directories: {},
+53 silly install resolved     _resolved: 'https://registry.npmjs.org/db-migrate/-/db-migrate-0.9.14.tgz' } ]
+54 info install db-migrate@0.9.14 into /home/ignacio/proyecto/exposicion
+55 info installOne db-migrate@0.9.14
+56 verbose installOne of db-migrate to /home/ignacio/proyecto/exposicion not in flight; installing
+57 verbose lock using /home/ignacio/.npm/_locks/db-migrate-bdbfc3e87c86864b.lock for /home/ignacio/proyecto/exposicion/node_modules/db-migrate
+58 silly install write writing db-migrate 0.9.14 to /home/ignacio/proyecto/exposicion/node_modules/db-migrate
+59 verbose unbuild node_modules/db-migrate
+60 silly gentlyRm /home/ignacio/proyecto/exposicion/node_modules/db-migrate is being purged from base /home/ignacio/proyecto/exposicion
+61 verbose gentlyRm don't care about contents; nuking /home/ignacio/proyecto/exposicion/node_modules/db-migrate
+62 verbose tar unpack /home/ignacio/.npm/db-migrate/0.9.14/package.tgz
+63 verbose tar unpacking to /home/ignacio/proyecto/exposicion/node_modules/db-migrate
+64 silly gentlyRm /home/ignacio/proyecto/exposicion/node_modules/db-migrate is being purged
+65 verbose gentlyRm don't care about contents; nuking /home/ignacio/proyecto/exposicion/node_modules/db-migrate
+66 silly gunzTarPerm modes [ '775', '664' ]
+67 silly gunzTarPerm extractEntry package.json
+68 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+69 silly gunzTarPerm extractEntry .npmignore
+70 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+71 silly gunzTarPerm extractEntry README.md
+72 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+73 silly gunzTarPerm extractEntry LICENSE
+74 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+75 silly gunzTarPerm extractEntry index.js
+76 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+77 silly gunzTarPerm extractEntry CONTRIBUTING.md
+78 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 420, 436 ]
+79 silly gunzTarPerm extractEntry .jshintrc
+80 silly gunzTarPerm modified mode [ '.jshintrc', 420, 436 ]
+81 silly gunzTarPerm extractEntry .jshintignore
+82 silly gunzTarPerm modified mode [ '.jshintignore', 420, 436 ]
+83 silly gunzTarPerm extractEntry bin/db-migrate
+84 silly gunzTarPerm modified mode [ 'bin/db-migrate', 493, 509 ]
+85 silly gunzTarPerm extractEntry .travis.yml
+86 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+87 silly gunzTarPerm extractEntry lib/class.js
+88 silly gunzTarPerm modified mode [ 'lib/class.js', 420, 436 ]
+89 silly gunzTarPerm extractEntry lib/config.js
+90 silly gunzTarPerm modified mode [ 'lib/config.js', 420, 436 ]
+91 silly gunzTarPerm extractEntry lib/data_type.js
+92 silly gunzTarPerm modified mode [ 'lib/data_type.js', 420, 436 ]
+93 silly gunzTarPerm extractEntry lib/inflection.js
+94 silly gunzTarPerm modified mode [ 'lib/inflection.js', 420, 436 ]
+95 silly gunzTarPerm extractEntry lib/log.js
+96 silly gunzTarPerm modified mode [ 'lib/log.js', 420, 436 ]
+97 silly gunzTarPerm extractEntry lib/migration.js
+98 silly gunzTarPerm modified mode [ 'lib/migration.js', 420, 436 ]
+99 silly gunzTarPerm extractEntry lib/migrator.js
+100 silly gunzTarPerm modified mode [ 'lib/migrator.js', 420, 436 ]
+101 silly gunzTarPerm extractEntry lib/util.js
+102 silly gunzTarPerm modified mode [ 'lib/util.js', 420, 436 ]
+103 silly gunzTarPerm extractEntry lib/driver/base.js
+104 silly gunzTarPerm modified mode [ 'lib/driver/base.js', 420, 436 ]
+105 silly gunzTarPerm extractEntry lib/driver/index.js
+106 silly gunzTarPerm modified mode [ 'lib/driver/index.js', 420, 436 ]
+107 silly gunzTarPerm extractEntry lib/driver/mongodb.js
+108 silly gunzTarPerm modified mode [ 'lib/driver/mongodb.js', 420, 436 ]
+109 silly gunzTarPerm extractEntry lib/driver/mysql.js
+110 silly gunzTarPerm modified mode [ 'lib/driver/mysql.js', 420, 436 ]
+111 silly gunzTarPerm extractEntry lib/driver/pg.js
+112 silly gunzTarPerm modified mode [ 'lib/driver/pg.js', 420, 436 ]
+113 silly gunzTarPerm extractEntry lib/driver/postgres.js
+114 silly gunzTarPerm modified mode [ 'lib/driver/postgres.js', 420, 436 ]
+115 silly gunzTarPerm extractEntry lib/driver/postgresql.js
+116 silly gunzTarPerm modified mode [ 'lib/driver/postgresql.js', 420, 436 ]
+117 silly gunzTarPerm extractEntry lib/driver/sqlite3.js
+118 silly gunzTarPerm modified mode [ 'lib/driver/sqlite3.js', 420, 436 ]
+119 silly gunzTarPerm extractEntry CHANGELOG.md
+120 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 436 ]
+121 verbose write writing to /home/ignacio/proyecto/exposicion/node_modules/db-migrate/package.json
+122 info preinstall db-migrate@0.9.14
+123 verbose readDependencies loading dependencies from /home/ignacio/proyecto/exposicion/node_modules/db-migrate/package.json
+124 silly prepareForInstallMany adding async@~0.9.0 from db-migrate dependencies
+125 silly prepareForInstallMany adding dotenv@~0.5.1 from db-migrate dependencies
+126 silly prepareForInstallMany adding final-fs@^1.6.0 from db-migrate dependencies
+127 silly prepareForInstallMany adding mkdirp@~0.5.0 from db-migrate dependencies
+128 silly prepareForInstallMany adding moment@~2.9.0 from db-migrate dependencies
+129 silly prepareForInstallMany adding mongodb@^1.4.30 from db-migrate dependencies
+130 silly prepareForInstallMany adding mysql@~2.5.4 from db-migrate dependencies
+131 silly prepareForInstallMany adding optimist@~0.6.1 from db-migrate dependencies
+132 silly prepareForInstallMany adding parse-database-url@~0.2.2 from db-migrate dependencies
+133 silly prepareForInstallMany adding pg@~4.2.0 from db-migrate dependencies
+134 silly prepareForInstallMany adding pkginfo@~0.3.0 from db-migrate dependencies
+135 silly prepareForInstallMany adding semver@~4.3.3 from db-migrate dependencies
+136 silly prepareForInstallMany adding sqlite3@~3.0.4 from db-migrate dependencies
+137 verbose readDependencies loading dependencies from /home/ignacio/proyecto/exposicion/node_modules/db-migrate/package.json
+138 silly cache add args [ 'final-fs@^1.6.0', null ]
+139 verbose cache add spec final-fs@^1.6.0
+140 silly cache add parsed spec { raw: 'final-fs@^1.6.0',
+140 silly cache add   scope: null,
+140 silly cache add   name: 'final-fs',
+140 silly cache add   rawSpec: '^1.6.0',
+140 silly cache add   spec: '>=1.6.0 <2.0.0',
+140 silly cache add   type: 'range' }
+141 silly addNamed final-fs@>=1.6.0 <2.0.0
+142 verbose addNamed ">=1.6.0 <2.0.0" is a valid semver range for final-fs
+143 silly addNameRange { name: 'final-fs', range: '>=1.6.0 <2.0.0', hasData: false }
+144 silly mapToRegistry name final-fs
+145 silly mapToRegistry using default registry
+146 silly mapToRegistry registry https://registry.npmjs.org/
+147 silly mapToRegistry uri https://registry.npmjs.org/final-fs
+148 verbose addNameRange registry:https://registry.npmjs.org/final-fs not in flight; fetching
+149 silly cache add args [ 'mkdirp@~0.5.0', null ]
+150 verbose cache add spec mkdirp@~0.5.0
+151 silly cache add parsed spec { raw: 'mkdirp@~0.5.0',
+151 silly cache add   scope: null,
+151 silly cache add   name: 'mkdirp',
+151 silly cache add   rawSpec: '~0.5.0',
+151 silly cache add   spec: '>=0.5.0 <0.6.0',
+151 silly cache add   type: 'range' }
+152 silly addNamed mkdirp@>=0.5.0 <0.6.0
+153 verbose addNamed ">=0.5.0 <0.6.0" is a valid semver range for mkdirp
+154 silly addNameRange { name: 'mkdirp', range: '>=0.5.0 <0.6.0', hasData: false }
+155 silly mapToRegistry name mkdirp
+156 silly mapToRegistry using default registry
+157 silly mapToRegistry registry https://registry.npmjs.org/
+158 silly mapToRegistry uri https://registry.npmjs.org/mkdirp
+159 verbose addNameRange registry:https://registry.npmjs.org/mkdirp not in flight; fetching
+160 silly cache add args [ 'moment@~2.9.0', null ]
+161 verbose cache add spec moment@~2.9.0
+162 silly cache add parsed spec { raw: 'moment@~2.9.0',
+162 silly cache add   scope: null,
+162 silly cache add   name: 'moment',
+162 silly cache add   rawSpec: '~2.9.0',
+162 silly cache add   spec: '>=2.9.0 <2.10.0',
+162 silly cache add   type: 'range' }
+163 silly addNamed moment@>=2.9.0 <2.10.0
+164 verbose addNamed ">=2.9.0 <2.10.0" is a valid semver range for moment
+165 silly addNameRange { name: 'moment', range: '>=2.9.0 <2.10.0', hasData: false }
+166 silly mapToRegistry name moment
+167 silly mapToRegistry using default registry
+168 silly mapToRegistry registry https://registry.npmjs.org/
+169 silly mapToRegistry uri https://registry.npmjs.org/moment
+170 verbose addNameRange registry:https://registry.npmjs.org/moment not in flight; fetching
+171 silly cache add args [ 'mongodb@^1.4.30', null ]
+172 verbose cache add spec mongodb@^1.4.30
+173 silly cache add parsed spec { raw: 'mongodb@^1.4.30',
+173 silly cache add   scope: null,
+173 silly cache add   name: 'mongodb',
+173 silly cache add   rawSpec: '^1.4.30',
+173 silly cache add   spec: '>=1.4.30 <2.0.0',
+173 silly cache add   type: 'range' }
+174 silly addNamed mongodb@>=1.4.30 <2.0.0
+175 verbose addNamed ">=1.4.30 <2.0.0" is a valid semver range for mongodb
+176 silly addNameRange { name: 'mongodb', range: '>=1.4.30 <2.0.0', hasData: false }
+177 silly mapToRegistry name mongodb
+178 silly mapToRegistry using default registry
+179 silly mapToRegistry registry https://registry.npmjs.org/
+180 silly mapToRegistry uri https://registry.npmjs.org/mongodb
+181 verbose addNameRange registry:https://registry.npmjs.org/mongodb not in flight; fetching
+182 silly cache add args [ 'mysql@~2.5.4', null ]
+183 verbose cache add spec mysql@~2.5.4
+184 silly cache add parsed spec { raw: 'mysql@~2.5.4',
+184 silly cache add   scope: null,
+184 silly cache add   name: 'mysql',
+184 silly cache add   rawSpec: '~2.5.4',
+184 silly cache add   spec: '>=2.5.4 <2.6.0',
+184 silly cache add   type: 'range' }
+185 silly addNamed mysql@>=2.5.4 <2.6.0
+186 verbose addNamed ">=2.5.4 <2.6.0" is a valid semver range for mysql
+187 silly addNameRange { name: 'mysql', range: '>=2.5.4 <2.6.0', hasData: false }
+188 silly mapToRegistry name mysql
+189 silly mapToRegistry using default registry
+190 silly mapToRegistry registry https://registry.npmjs.org/
+191 silly mapToRegistry uri https://registry.npmjs.org/mysql
+192 verbose addNameRange registry:https://registry.npmjs.org/mysql not in flight; fetching
+193 silly cache add args [ 'optimist@~0.6.1', null ]
+194 verbose cache add spec optimist@~0.6.1
+195 silly cache add parsed spec { raw: 'optimist@~0.6.1',
+195 silly cache add   scope: null,
+195 silly cache add   name: 'optimist',
+195 silly cache add   rawSpec: '~0.6.1',
+195 silly cache add   spec: '>=0.6.1 <0.7.0',
+195 silly cache add   type: 'range' }
+196 silly addNamed optimist@>=0.6.1 <0.7.0
+197 verbose addNamed ">=0.6.1 <0.7.0" is a valid semver range for optimist
+198 silly addNameRange { name: 'optimist', range: '>=0.6.1 <0.7.0', hasData: false }
+199 silly mapToRegistry name optimist
+200 silly mapToRegistry using default registry
+201 silly mapToRegistry registry https://registry.npmjs.org/
+202 silly mapToRegistry uri https://registry.npmjs.org/optimist
+203 verbose addNameRange registry:https://registry.npmjs.org/optimist not in flight; fetching
+204 silly cache add args [ 'parse-database-url@~0.2.2', null ]
+205 verbose cache add spec parse-database-url@~0.2.2
+206 silly cache add parsed spec { raw: 'parse-database-url@~0.2.2',
+206 silly cache add   scope: null,
+206 silly cache add   name: 'parse-database-url',
+206 silly cache add   rawSpec: '~0.2.2',
+206 silly cache add   spec: '>=0.2.2 <0.3.0',
+206 silly cache add   type: 'range' }
+207 silly addNamed parse-database-url@>=0.2.2 <0.3.0
+208 verbose addNamed ">=0.2.2 <0.3.0" is a valid semver range for parse-database-url
+209 silly addNameRange { name: 'parse-database-url',
+209 silly addNameRange   range: '>=0.2.2 <0.3.0',
+209 silly addNameRange   hasData: false }
+210 silly mapToRegistry name parse-database-url
+211 silly mapToRegistry using default registry
+212 silly mapToRegistry registry https://registry.npmjs.org/
+213 silly mapToRegistry uri https://registry.npmjs.org/parse-database-url
+214 verbose addNameRange registry:https://registry.npmjs.org/parse-database-url not in flight; fetching
+215 silly cache add args [ 'pg@~4.2.0', null ]
+216 verbose cache add spec pg@~4.2.0
+217 silly cache add parsed spec { raw: 'pg@~4.2.0',
+217 silly cache add   scope: null,
+217 silly cache add   name: 'pg',
+217 silly cache add   rawSpec: '~4.2.0',
+217 silly cache add   spec: '>=4.2.0 <4.3.0',
+217 silly cache add   type: 'range' }
+218 silly addNamed pg@>=4.2.0 <4.3.0
+219 verbose addNamed ">=4.2.0 <4.3.0" is a valid semver range for pg
+220 silly addNameRange { name: 'pg', range: '>=4.2.0 <4.3.0', hasData: false }
+221 silly mapToRegistry name pg
+222 silly mapToRegistry using default registry
+223 silly mapToRegistry registry https://registry.npmjs.org/
+224 silly mapToRegistry uri https://registry.npmjs.org/pg
+225 verbose addNameRange registry:https://registry.npmjs.org/pg not in flight; fetching
+226 silly cache add args [ 'pkginfo@~0.3.0', null ]
+227 verbose cache add spec pkginfo@~0.3.0
+228 silly cache add parsed spec { raw: 'pkginfo@~0.3.0',
+228 silly cache add   scope: null,
+228 silly cache add   name: 'pkginfo',
+228 silly cache add   rawSpec: '~0.3.0',
+228 silly cache add   spec: '>=0.3.0 <0.4.0',
+228 silly cache add   type: 'range' }
+229 silly addNamed pkginfo@>=0.3.0 <0.4.0
+230 verbose addNamed ">=0.3.0 <0.4.0" is a valid semver range for pkginfo
+231 silly addNameRange { name: 'pkginfo', range: '>=0.3.0 <0.4.0', hasData: false }
+232 silly mapToRegistry name pkginfo
+233 silly mapToRegistry using default registry
+234 silly mapToRegistry registry https://registry.npmjs.org/
+235 silly mapToRegistry uri https://registry.npmjs.org/pkginfo
+236 verbose addNameRange registry:https://registry.npmjs.org/pkginfo not in flight; fetching
+237 silly cache add args [ 'semver@~4.3.3', null ]
+238 verbose cache add spec semver@~4.3.3
+239 silly cache add parsed spec { raw: 'semver@~4.3.3',
+239 silly cache add   scope: null,
+239 silly cache add   name: 'semver',
+239 silly cache add   rawSpec: '~4.3.3',
+239 silly cache add   spec: '>=4.3.3 <4.4.0',
+239 silly cache add   type: 'range' }
+240 silly addNamed semver@>=4.3.3 <4.4.0
+241 verbose addNamed ">=4.3.3 <4.4.0" is a valid semver range for semver
+242 silly addNameRange { name: 'semver', range: '>=4.3.3 <4.4.0', hasData: false }
+243 silly mapToRegistry name semver
+244 silly mapToRegistry using default registry
+245 silly mapToRegistry registry https://registry.npmjs.org/
+246 silly mapToRegistry uri https://registry.npmjs.org/semver
+247 verbose addNameRange registry:https://registry.npmjs.org/semver not in flight; fetching
+248 silly cache add args [ 'sqlite3@~3.0.4', null ]
+249 verbose cache add spec sqlite3@~3.0.4
+250 silly cache add parsed spec { raw: 'sqlite3@~3.0.4',
+250 silly cache add   scope: null,
+250 silly cache add   name: 'sqlite3',
+250 silly cache add   rawSpec: '~3.0.4',
+250 silly cache add   spec: '>=3.0.4 <3.1.0',
+250 silly cache add   type: 'range' }
+251 silly addNamed sqlite3@>=3.0.4 <3.1.0
+252 verbose addNamed ">=3.0.4 <3.1.0" is a valid semver range for sqlite3
+253 silly addNameRange { name: 'sqlite3', range: '>=3.0.4 <3.1.0', hasData: false }
+254 silly mapToRegistry name sqlite3
+255 silly mapToRegistry using default registry
+256 silly mapToRegistry registry https://registry.npmjs.org/
+257 silly mapToRegistry uri https://registry.npmjs.org/sqlite3
+258 verbose addNameRange registry:https://registry.npmjs.org/sqlite3 not in flight; fetching
+259 silly cache add args [ 'async@~0.9.0', null ]
+260 verbose cache add spec async@~0.9.0
+261 silly cache add parsed spec { raw: 'async@~0.9.0',
+261 silly cache add   scope: null,
+261 silly cache add   name: 'async',
+261 silly cache add   rawSpec: '~0.9.0',
+261 silly cache add   spec: '>=0.9.0 <0.10.0',
+261 silly cache add   type: 'range' }
+262 silly addNamed async@>=0.9.0 <0.10.0
+263 verbose addNamed ">=0.9.0 <0.10.0" is a valid semver range for async
+264 silly addNameRange { name: 'async', range: '>=0.9.0 <0.10.0', hasData: false }
+265 silly mapToRegistry name async
+266 silly mapToRegistry using default registry
+267 silly mapToRegistry registry https://registry.npmjs.org/
+268 silly mapToRegistry uri https://registry.npmjs.org/async
+269 verbose addNameRange registry:https://registry.npmjs.org/async not in flight; fetching
+270 silly cache add args [ 'dotenv@~0.5.1', null ]
+271 verbose cache add spec dotenv@~0.5.1
+272 silly cache add parsed spec { raw: 'dotenv@~0.5.1',
+272 silly cache add   scope: null,
+272 silly cache add   name: 'dotenv',
+272 silly cache add   rawSpec: '~0.5.1',
+272 silly cache add   spec: '>=0.5.1 <0.6.0',
+272 silly cache add   type: 'range' }
+273 silly addNamed dotenv@>=0.5.1 <0.6.0
+274 verbose addNamed ">=0.5.1 <0.6.0" is a valid semver range for dotenv
+275 silly addNameRange { name: 'dotenv', range: '>=0.5.1 <0.6.0', hasData: false }
+276 silly mapToRegistry name dotenv
+277 silly mapToRegistry using default registry
+278 silly mapToRegistry registry https://registry.npmjs.org/
+279 silly mapToRegistry uri https://registry.npmjs.org/dotenv
+280 verbose addNameRange registry:https://registry.npmjs.org/dotenv not in flight; fetching
+281 verbose request uri https://registry.npmjs.org/final-fs
+282 verbose request no auth needed
+283 info attempt registry request try #1 at 14:48:27
+284 http request GET https://registry.npmjs.org/final-fs
+285 verbose request uri https://registry.npmjs.org/moment
+286 verbose request no auth needed
+287 info attempt registry request try #1 at 14:48:27
+288 http request GET https://registry.npmjs.org/moment
+289 verbose request uri https://registry.npmjs.org/mongodb
+290 verbose request no auth needed
+291 info attempt registry request try #1 at 14:48:27
+292 http request GET https://registry.npmjs.org/mongodb
+293 verbose request uri https://registry.npmjs.org/parse-database-url
+294 verbose request no auth needed
+295 info attempt registry request try #1 at 14:48:27
+296 http request GET https://registry.npmjs.org/parse-database-url
+297 verbose request uri https://registry.npmjs.org/pg
+298 verbose request no auth needed
+299 info attempt registry request try #1 at 14:48:27
+300 http request GET https://registry.npmjs.org/pg
+301 verbose request uri https://registry.npmjs.org/pkginfo
+302 verbose request no auth needed
+303 info attempt registry request try #1 at 14:48:27
+304 http request GET https://registry.npmjs.org/pkginfo
+305 verbose request uri https://registry.npmjs.org/sqlite3
+306 verbose request no auth needed
+307 info attempt registry request try #1 at 14:48:27
+308 http request GET https://registry.npmjs.org/sqlite3
+309 verbose request uri https://registry.npmjs.org/async
+310 verbose request no auth needed
+311 info attempt registry request try #1 at 14:48:27
+312 http request GET https://registry.npmjs.org/async
+313 verbose request uri https://registry.npmjs.org/dotenv
+314 verbose request no auth needed
+315 info attempt registry request try #1 at 14:48:27
+316 http request GET https://registry.npmjs.org/dotenv
+317 verbose request uri https://registry.npmjs.org/mkdirp
+318 verbose request no auth needed
+319 info attempt registry request try #1 at 14:48:27
+320 verbose etag "2JO3W97TY0J7IT84HRD0KBWVE"
+321 http request GET https://registry.npmjs.org/mkdirp
+322 verbose request uri https://registry.npmjs.org/mysql
+323 verbose request no auth needed
+324 info attempt registry request try #1 at 14:48:27
+325 verbose etag "9Q4XNJDJ0FUG6BUW4R2QGFME5"
+326 http request GET https://registry.npmjs.org/mysql
+327 verbose request uri https://registry.npmjs.org/optimist
+328 verbose request no auth needed
+329 info attempt registry request try #1 at 14:48:27
+330 verbose etag "2063HZFLM126ZA9QQZY54Z4OC"
+331 http request GET https://registry.npmjs.org/optimist
+332 verbose request uri https://registry.npmjs.org/semver
+333 verbose request no auth needed
+334 info attempt registry request try #1 at 14:48:27
+335 verbose etag "BRQ3SKK4LD24T6TQYA0WKY7J5"
+336 http request GET https://registry.npmjs.org/semver
+337 http 200 https://registry.npmjs.org/parse-database-url
+338 silly get cb [ 200,
+338 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+338 silly get     etag: '"DOXIISHVB6C9O3RTD35CR7FMV"',
+338 silly get     'content-type': 'application/json',
+338 silly get     'cache-control': 'max-age=60',
+338 silly get     'content-length': '7311',
+338 silly get     'accept-ranges': 'bytes',
+338 silly get     date: 'Mon, 18 May 2015 20:48:27 GMT',
+338 silly get     via: '1.1 varnish',
+338 silly get     age: '45',
+338 silly get     connection: 'keep-alive',
+338 silly get     'x-served-by': 'cache-jfk1023-JFK',
+338 silly get     'x-cache': 'HIT',
+338 silly get     'x-cache-hits': '1',
+338 silly get     'x-timer': 'S1431982107.618991,VS0,VE0',
+338 silly get     vary: 'Accept' } ]
+339 verbose get saving parse-database-url to /home/ignacio/.npm/registry.npmjs.org/parse-database-url/.cache.json
+340 silly addNameRange number 2 { name: 'parse-database-url',
+340 silly addNameRange   range: '>=0.2.2 <0.3.0',
+340 silly addNameRange   hasData: true }
+341 silly addNameRange versions [ 'parse-database-url', [ '0.1.0', '0.2.0', '0.2.1', '0.2.2' ] ]
+342 silly addNamed parse-database-url@0.2.2
+343 verbose addNamed "0.2.2" is a plain semver version for parse-database-url
+344 silly mapToRegistry name parse-database-url
+345 silly mapToRegistry using default registry
+346 silly mapToRegistry registry https://registry.npmjs.org/
+347 silly mapToRegistry uri https://registry.npmjs.org/parse-database-url
+348 verbose addRemoteTarball https://registry.npmjs.org/parse-database-url/-/parse-database-url-0.2.2.tgz not in flight; adding
+349 verbose addRemoteTarball [ 'https://registry.npmjs.org/parse-database-url/-/parse-database-url-0.2.2.tgz',
+349 verbose addRemoteTarball   '48615ae7a7c0fc77e3294d23542a6a5273c3570b' ]
+350 info retry fetch attempt 1 at 14:48:27
+351 info attempt registry request try #1 at 14:48:27
+352 http fetch GET https://registry.npmjs.org/parse-database-url/-/parse-database-url-0.2.2.tgz
+353 http 304 https://registry.npmjs.org/mkdirp
+354 silly get cb [ 304,
+354 silly get   { date: 'Mon, 18 May 2015 20:48:27 GMT',
+354 silly get     via: '1.1 varnish',
+354 silly get     'cache-control': 'max-age=60',
+354 silly get     etag: '"2JO3W97TY0J7IT84HRD0KBWVE"',
+354 silly get     age: '31',
+354 silly get     connection: 'keep-alive',
+354 silly get     'x-served-by': 'cache-jfk1027-JFK',
+354 silly get     'x-cache': 'HIT',
+354 silly get     'x-cache-hits': '2',
+354 silly get     'x-timer': 'S1431982107.675477,VS0,VE0',
+354 silly get     vary: 'Accept' } ]
+355 verbose etag https://registry.npmjs.org/mkdirp from cache
+356 verbose get saving mkdirp to /home/ignacio/.npm/registry.npmjs.org/mkdirp/.cache.json
+357 http 304 https://registry.npmjs.org/optimist
+358 silly get cb [ 304,
+358 silly get   { date: 'Mon, 18 May 2015 20:48:27 GMT',
+358 silly get     via: '1.1 varnish',
+358 silly get     'cache-control': 'max-age=60',
+358 silly get     etag: '"2063HZFLM126ZA9QQZY54Z4OC"',
+358 silly get     age: '48',
+358 silly get     connection: 'keep-alive',
+358 silly get     'x-served-by': 'cache-jfk1020-JFK',
+358 silly get     'x-cache': 'HIT',
+358 silly get     'x-cache-hits': '10',
+358 silly get     'x-timer': 'S1431982107.675966,VS0,VE0',
+358 silly get     vary: 'Accept' } ]
+359 verbose etag https://registry.npmjs.org/optimist from cache
+360 verbose get saving optimist to /home/ignacio/.npm/registry.npmjs.org/optimist/.cache.json
+361 silly addNameRange number 2 { name: 'mkdirp', range: '>=0.5.0 <0.6.0', hasData: true }
+362 silly addNameRange versions [ 'mkdirp',
+362 silly addNameRange   [ '0.0.1',
+362 silly addNameRange     '0.0.2',
+362 silly addNameRange     '0.0.3',
+362 silly addNameRange     '0.0.4',
+362 silly addNameRange     '0.0.5',
+362 silly addNameRange     '0.0.6',
+362 silly addNameRange     '0.0.7',
+362 silly addNameRange     '0.1.0',
+362 silly addNameRange     '0.2.0',
+362 silly addNameRange     '0.2.1',
+362 silly addNameRange     '0.2.2',
+362 silly addNameRange     '0.3.0',
+362 silly addNameRange     '0.3.1',
+362 silly addNameRange     '0.3.2',
+362 silly addNameRange     '0.3.3',
+362 silly addNameRange     '0.3.4',
+362 silly addNameRange     '0.3.5',
+362 silly addNameRange     '0.4.0',
+362 silly addNameRange     '0.4.1',
+362 silly addNameRange     '0.4.2',
+362 silly addNameRange     '0.5.0',
+362 silly addNameRange     '0.5.1' ] ]
+363 silly addNamed mkdirp@0.5.1
+364 verbose addNamed "0.5.1" is a plain semver version for mkdirp
+365 silly addNameRange number 2 { name: 'optimist', range: '>=0.6.1 <0.7.0', hasData: true }
+366 silly addNameRange versions [ 'optimist',
+366 silly addNameRange   [ '0.0.1',
+366 silly addNameRange     '0.0.2',
+366 silly addNameRange     '0.0.4',
+366 silly addNameRange     '0.0.5',
+366 silly addNameRange     '0.0.6',
+366 silly addNameRange     '0.0.7',
+366 silly addNameRange     '0.1.0',
+366 silly addNameRange     '0.1.1',
+366 silly addNameRange     '0.1.2',
+366 silly addNameRange     '0.1.3',
+366 silly addNameRange     '0.1.4',
+366 silly addNameRange     '0.1.5',
+366 silly addNameRange     '0.1.6',
+366 silly addNameRange     '0.1.7',
+366 silly addNameRange     '0.1.8',
+366 silly addNameRange     '0.1.9',
+366 silly addNameRange     '0.0.3',
+366 silly addNameRange     '0.2.0',
+366 silly addNameRange     '0.2.1',
+366 silly addNameRange     '0.2.2',
+366 silly addNameRange     '0.2.3',
+366 silly addNameRange     '0.2.4',
+366 silly addNameRange     '0.2.5',
+366 silly addNameRange     '0.2.6',
+366 silly addNameRange     '0.2.7',
+366 silly addNameRange     '0.2.8',
+366 silly addNameRange     '0.3.0',
+366 silly addNameRange     '0.3.1',
+366 silly addNameRange     '0.3.3',
+366 silly addNameRange     '0.3.4',
+366 silly addNameRange     '0.3.5',
+366 silly addNameRange     '0.3.6',
+366 silly addNameRange     '0.3.7',
+366 silly addNameRange     '0.4.0',
+366 silly addNameRange     '0.5.0',
+366 silly addNameRange     '0.5.1',
+366 silly addNameRange     '0.5.2',
+366 silly addNameRange     '0.6.0',
+366 silly addNameRange     '0.6.1' ] ]
+367 silly addNamed optimist@0.6.1
+368 verbose addNamed "0.6.1" is a plain semver version for optimist
+369 silly mapToRegistry name optimist
+370 silly mapToRegistry using default registry
+371 silly mapToRegistry registry https://registry.npmjs.org/
+372 silly mapToRegistry uri https://registry.npmjs.org/optimist
+373 verbose addRemoteTarball https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz not in flight; adding
+374 verbose addRemoteTarball [ 'https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz',
+374 verbose addRemoteTarball   'da3ea74686fa21a19a111c326e90eb15a0196686' ]
+375 silly cache afterAdd mkdirp@0.5.1
+376 verbose afterAdd /home/ignacio/.npm/mkdirp/0.5.1/package/package.json not in flight; writing
+377 info retry fetch attempt 1 at 14:48:27
+378 info attempt registry request try #1 at 14:48:27
+379 http fetch GET https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz
+380 verbose afterAdd /home/ignacio/.npm/mkdirp/0.5.1/package/package.json written
+381 http 304 https://registry.npmjs.org/semver
+382 silly get cb [ 304,
+382 silly get   { date: 'Mon, 18 May 2015 20:48:27 GMT',
+382 silly get     via: '1.1 varnish',
+382 silly get     'cache-control': 'max-age=60',
+382 silly get     etag: '"BRQ3SKK4LD24T6TQYA0WKY7J5"',
+382 silly get     age: '37',
+382 silly get     connection: 'keep-alive',
+382 silly get     'x-served-by': 'cache-jfk1021-JFK',
+382 silly get     'x-cache': 'HIT',
+382 silly get     'x-cache-hits': '8',
+382 silly get     'x-timer': 'S1431982107.759575,VS0,VE0',
+382 silly get     vary: 'Accept' } ]
+383 verbose etag https://registry.npmjs.org/semver from cache
+384 verbose get saving semver to /home/ignacio/.npm/registry.npmjs.org/semver/.cache.json
+385 http 304 https://registry.npmjs.org/mysql
+386 silly get cb [ 304,
+386 silly get   { date: 'Mon, 18 May 2015 20:48:27 GMT',
+386 silly get     via: '1.1 varnish',
+386 silly get     'cache-control': 'max-age=60',
+386 silly get     etag: '"9Q4XNJDJ0FUG6BUW4R2QGFME5"',
+386 silly get     age: '45',
+386 silly get     connection: 'keep-alive',
+386 silly get     'x-served-by': 'cache-jfk1031-JFK',
+386 silly get     'x-cache': 'HIT',
+386 silly get     'x-cache-hits': '1',
+386 silly get     'x-timer': 'S1431982107.760373,VS0,VE0',
+386 silly get     vary: 'Accept' } ]
+387 verbose etag https://registry.npmjs.org/mysql from cache
+388 verbose get saving mysql to /home/ignacio/.npm/registry.npmjs.org/mysql/.cache.json
+389 silly addNameRange number 2 { name: 'semver', range: '>=4.3.3 <4.4.0', hasData: true }
+390 silly addNameRange versions [ 'semver',
+390 silly addNameRange   [ '1.0.0',
+390 silly addNameRange     '1.0.1',
+390 silly addNameRange     '1.0.2',
+390 silly addNameRange     '1.0.3',
+390 silly addNameRange     '1.0.4',
+390 silly addNameRange     '1.0.5',
+390 silly addNameRange     '1.0.6',
+390 silly addNameRange     '1.0.7',
+390 silly addNameRange     '1.0.8',
+390 silly addNameRange     '1.0.9',
+390 silly addNameRange     '1.0.10',
+390 silly addNameRange     '1.0.11',
+390 silly addNameRange     '1.0.12',
+390 silly addNameRange     '1.0.13',
+390 silly addNameRange     '1.0.14',
+390 silly addNameRange     '1.1.0',
+390 silly addNameRange     '1.1.1',
+390 silly addNameRange     '1.1.2',
+390 silly addNameRange     '1.1.3',
+390 silly addNameRange     '1.1.4',
+390 silly addNameRange     '2.0.0-alpha',
+390 silly addNameRange     '2.0.0-beta',
+390 silly addNameRange     '2.0.1',
+390 silly addNameRange     '2.0.2',
+390 silly addNameRange     '2.0.3',
+390 silly addNameRange     '2.0.4',
+390 silly addNameRange     '2.0.5',
+390 silly addNameRange     '2.0.6',
+390 silly addNameRange     '2.0.7',
+390 silly addNameRange     '2.0.8',
+390 silly addNameRange     '2.0.9',
+390 silly addNameRange     '2.0.10',
+390 silly addNameRange     '2.0.11',
+390 silly addNameRange     '2.1.0',
+390 silly addNameRange     '2.2.0',
+390 silly addNameRange     '2.2.1',
+390 silly addNameRange     '2.3.0',
+390 silly addNameRange     '2.3.1',
+390 silly addNameRange     '2.3.2',
+390 silly addNameRange     '3.0.0',
+390 silly addNameRange     '3.0.1',
+390 silly addNameRange     '4.0.0',
+390 silly addNameRange     '4.0.2',
+390 silly addNameRange     '4.0.3',
+390 silly addNameRange     '4.1.0',
+390 silly addNameRange     '4.1.1',
+390 silly addNameRange     '4.2.0',
+390 silly addNameRange     '4.2.1',
+390 silly addNameRange     '4.2.2',
+390 silly addNameRange     '4.3.0',
+390 silly addNameRange     '4.3.1',
+390 silly addNameRange     '4.3.2',
+390 silly addNameRange     '4.3.3',
+390 silly addNameRange     '4.3.4' ] ]
+391 silly addNamed semver@4.3.4
+392 verbose addNamed "4.3.4" is a plain semver version for semver
+393 silly addNameRange number 2 { name: 'mysql', range: '>=2.5.4 <2.6.0', hasData: true }
+394 silly addNameRange versions [ 'mysql',
+394 silly addNameRange   [ '0.1.0',
+394 silly addNameRange     '0.2.0',
+394 silly addNameRange     '0.3.0',
+394 silly addNameRange     '0.4.0',
+394 silly addNameRange     '0.5.0',
+394 silly addNameRange     '0.6.0',
+394 silly addNameRange     '0.7.0',
+394 silly addNameRange     '0.8.0',
+394 silly addNameRange     '0.9.0',
+394 silly addNameRange     '0.9.1',
+394 silly addNameRange     '0.9.2',
+394 silly addNameRange     '0.9.3',
+394 silly addNameRange     '0.9.4',
+394 silly addNameRange     '0.9.5',
+394 silly addNameRange     '0.9.6',
+394 silly addNameRange     '2.0.0-alpha',
+394 silly addNameRange     '2.0.0-alpha2',
+394 silly addNameRange     '2.0.0-alpha3',
+394 silly addNameRange     '2.0.0-alpha4',
+394 silly addNameRange     '2.0.0-alpha5',
+394 silly addNameRange     '2.0.0-alpha6',
+394 silly addNameRange     '2.0.0-alpha7',
+394 silly addNameRange     '2.0.0-alpha8',
+394 silly addNameRange     '2.0.0-alpha9',
+394 silly addNameRange     '2.0.0-rc1',
+394 silly addNameRange     '2.0.0-rc2',
+394 silly addNameRange     '2.0.0',
+394 silly addNameRange     '2.0.1',
+394 silly addNameRange     '2.1.0',
+394 silly addNameRange     '2.1.1',
+394 silly addNameRange     '2.2.0',
+394 silly addNameRange     '2.3.0',
+394 silly addNameRange     '2.3.1',
+394 silly addNameRange     '2.3.2',
+394 silly addNameRange     '2.4.0',
+394 silly addNameRange     '2.4.1',
+394 silly addNameRange     '2.4.2',
+394 silly addNameRange     '2.4.3',
+394 silly addNameRange     '2.5.0',
+394 silly addNameRange     '2.5.1',
+394 silly addNameRange     '2.5.2',
+394 silly addNameRange     '2.5.3',
+394 silly addNameRange     '2.5.4',
+394 silly addNameRange     '2.5.5',
+394 silly addNameRange     '2.6.0',
+394 silly addNameRange     '2.6.1',
+394 silly addNameRange     '2.6.2' ] ]
+395 silly addNamed mysql@2.5.5
+396 verbose addNamed "2.5.5" is a plain semver version for mysql
+397 silly mapToRegistry name mysql
+398 silly mapToRegistry using default registry
+399 silly mapToRegistry registry https://registry.npmjs.org/
+400 silly mapToRegistry uri https://registry.npmjs.org/mysql
+401 verbose addRemoteTarball https://registry.npmjs.org/mysql/-/mysql-2.5.5.tgz not in flight; adding
+402 verbose addRemoteTarball [ 'https://registry.npmjs.org/mysql/-/mysql-2.5.5.tgz',
+402 verbose addRemoteTarball   '02a1c4d0617fb771d85c15fcf24d108f5a62f648' ]
+403 info retry fetch attempt 1 at 14:48:27
+404 info attempt registry request try #1 at 14:48:27
+405 http fetch GET https://registry.npmjs.org/mysql/-/mysql-2.5.5.tgz
+406 silly cache afterAdd semver@4.3.4
+407 verbose afterAdd /home/ignacio/.npm/semver/4.3.4/package/package.json not in flight; writing
+408 verbose afterAdd /home/ignacio/.npm/semver/4.3.4/package/package.json written
+409 http 200 https://registry.npmjs.org/final-fs
+410 silly get cb [ 200,
+410 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+410 silly get     etag: '"CDXDM8LV4N0CXXDCMC9OEAL4I"',
+410 silly get     'content-type': 'application/json',
+410 silly get     'cache-control': 'max-age=60',
+410 silly get     'content-length': '30511',
+410 silly get     'accept-ranges': 'bytes',
+410 silly get     date: 'Mon, 18 May 2015 20:48:27 GMT',
+410 silly get     via: '1.1 varnish',
+410 silly get     age: '45',
+410 silly get     connection: 'keep-alive',
+410 silly get     'x-served-by': 'cache-jfk1026-JFK',
+410 silly get     'x-cache': 'HIT',
+410 silly get     'x-cache-hits': '1',
+410 silly get     'x-timer': 'S1431982107.619296,VS0,VE0',
+410 silly get     vary: 'Accept' } ]
+411 verbose get saving final-fs to /home/ignacio/.npm/registry.npmjs.org/final-fs/.cache.json
+412 silly addNameRange number 2 { name: 'final-fs', range: '>=1.6.0 <2.0.0', hasData: true }
+413 silly addNameRange versions [ 'final-fs',
+413 silly addNameRange   [ '0.0.0',
+413 silly addNameRange     '0.1.0',
+413 silly addNameRange     '0.2.1',
+413 silly addNameRange     '1.0.0',
+413 silly addNameRange     '1.0.1',
+413 silly addNameRange     '1.0.3',
+413 silly addNameRange     '1.1.1',
+413 silly addNameRange     '1.1.2',
+413 silly addNameRange     '1.2.0',
+413 silly addNameRange     '1.3.0',
+413 silly addNameRange     '1.3.1',
+413 silly addNameRange     '1.3.2',
+413 silly addNameRange     '1.4.0',
+413 silly addNameRange     '1.4.1',
+413 silly addNameRange     '1.4.2',
+413 silly addNameRange     '1.4.3',
+413 silly addNameRange     '1.4.4',
+413 silly addNameRange     '1.5.0',
+413 silly addNameRange     '1.6.0',
+413 silly addNameRange     '1.6.1' ] ]
+414 silly addNamed final-fs@1.6.1
+415 verbose addNamed "1.6.1" is a plain semver version for final-fs
+416 silly mapToRegistry name final-fs
+417 silly mapToRegistry using default registry
+418 silly mapToRegistry registry https://registry.npmjs.org/
+419 silly mapToRegistry uri https://registry.npmjs.org/final-fs
+420 verbose addRemoteTarball https://registry.npmjs.org/final-fs/-/final-fs-1.6.1.tgz not in flight; adding
+421 verbose addRemoteTarball [ 'https://registry.npmjs.org/final-fs/-/final-fs-1.6.1.tgz',
+421 verbose addRemoteTarball   'd6dcd92ef6fe4fe8c07abd568c7135610ede3236' ]
+422 info retry fetch attempt 1 at 14:48:27
+423 info attempt registry request try #1 at 14:48:27
+424 http fetch GET https://registry.npmjs.org/final-fs/-/final-fs-1.6.1.tgz
+425 http 200 https://registry.npmjs.org/pkginfo
+426 silly get cb [ 200,
+426 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+426 silly get     etag: '"E07T2BVIPQ4D4MCDWTA5XC75O"',
+426 silly get     'content-type': 'application/json',
+426 silly get     'cache-control': 'max-age=60',
+426 silly get     'content-length': '6474',
+426 silly get     'accept-ranges': 'bytes',
+426 silly get     date: 'Mon, 18 May 2015 20:48:27 GMT',
+426 silly get     via: '1.1 varnish',
+426 silly get     age: '46',
+426 silly get     connection: 'keep-alive',
+426 silly get     'x-served-by': 'cache-jfk1031-JFK',
+426 silly get     'x-cache': 'HIT',
+426 silly get     'x-cache-hits': '2',
+426 silly get     'x-timer': 'S1431982107.686976,VS0,VE0',
+426 silly get     vary: 'Accept' } ]
+427 verbose get saving pkginfo to /home/ignacio/.npm/registry.npmjs.org/pkginfo/.cache.json
+428 silly addNameRange number 2 { name: 'pkginfo', range: '>=0.3.0 <0.4.0', hasData: true }
+429 silly addNameRange versions [ 'pkginfo', [ '0.2.1', '0.2.2', '0.2.3', '0.3.0' ] ]
+430 silly addNamed pkginfo@0.3.0
+431 verbose addNamed "0.3.0" is a plain semver version for pkginfo
+432 silly mapToRegistry name pkginfo
+433 silly mapToRegistry using default registry
+434 silly mapToRegistry registry https://registry.npmjs.org/
+435 silly mapToRegistry uri https://registry.npmjs.org/pkginfo
+436 verbose addRemoteTarball https://registry.npmjs.org/pkginfo/-/pkginfo-0.3.0.tgz not in flight; adding
+437 verbose addRemoteTarball [ 'https://registry.npmjs.org/pkginfo/-/pkginfo-0.3.0.tgz',
+437 verbose addRemoteTarball   '726411401039fe9b009eea86614295d5f3a54276' ]
+438 info retry fetch attempt 1 at 14:48:28
+439 info attempt registry request try #1 at 14:48:28
+440 http fetch GET https://registry.npmjs.org/pkginfo/-/pkginfo-0.3.0.tgz
+441 http 200 https://registry.npmjs.org/dotenv
+442 silly get cb [ 200,
+442 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+442 silly get     etag: '"2HR0Z9YYAA0UD2IBD4BOV9DOD"',
+442 silly get     'content-type': 'application/json',
+442 silly get     'cache-control': 'max-age=60',
+442 silly get     'content-length': '27596',
+442 silly get     'accept-ranges': 'bytes',
+442 silly get     date: 'Mon, 18 May 2015 20:48:27 GMT',
+442 silly get     via: '1.1 varnish',
+442 silly get     age: '45',
+442 silly get     connection: 'keep-alive',
+442 silly get     'x-served-by': 'cache-jfk1033-JFK',
+442 silly get     'x-cache': 'HIT',
+442 silly get     'x-cache-hits': '1',
+442 silly get     'x-timer': 'S1431982107.668615,VS0,VE0',
+442 silly get     vary: 'Accept' } ]
+443 verbose get saving dotenv to /home/ignacio/.npm/registry.npmjs.org/dotenv/.cache.json
+444 silly addNameRange number 2 { name: 'dotenv', range: '>=0.5.1 <0.6.0', hasData: true }
+445 silly addNameRange versions [ 'dotenv',
+445 silly addNameRange   [ '0.0.1',
+445 silly addNameRange     '0.0.2',
+445 silly addNameRange     '0.0.3',
+445 silly addNameRange     '0.0.4',
+445 silly addNameRange     '0.0.5',
+445 silly addNameRange     '0.1.0',
+445 silly addNameRange     '0.1.1',
+445 silly addNameRange     '0.1.2',
+445 silly addNameRange     '0.2.0',
+445 silly addNameRange     '0.2.1',
+445 silly addNameRange     '0.2.2',
+445 silly addNameRange     '0.2.3',
+445 silly addNameRange     '0.2.4',
+445 silly addNameRange     '0.2.5',
+445 silly addNameRange     '0.2.6',
+445 silly addNameRange     '0.2.7',
+445 silly addNameRange     '0.2.8',
+445 silly addNameRange     '0.3.0',
+445 silly addNameRange     '0.4.0',
+445 silly addNameRange     '0.5.0',
+445 silly addNameRange     '0.5.1',
+445 silly addNameRange     '1.0.0',
+445 silly addNameRange     '1.1.0' ] ]
+446 silly addNamed dotenv@0.5.1
+447 verbose addNamed "0.5.1" is a plain semver version for dotenv
+448 silly mapToRegistry name dotenv
+449 silly mapToRegistry using default registry
+450 silly mapToRegistry registry https://registry.npmjs.org/
+451 silly mapToRegistry uri https://registry.npmjs.org/dotenv
+452 verbose addRemoteTarball https://registry.npmjs.org/dotenv/-/dotenv-0.5.1.tgz not in flight; adding
+453 verbose addRemoteTarball [ 'https://registry.npmjs.org/dotenv/-/dotenv-0.5.1.tgz',
+453 verbose addRemoteTarball   '87d181f76102afd1a2b85c277ddd8b8795dc565b' ]
+454 info retry fetch attempt 1 at 14:48:28
+455 info attempt registry request try #1 at 14:48:28
+456 http fetch GET https://registry.npmjs.org/dotenv/-/dotenv-0.5.1.tgz
+457 http 200 https://registry.npmjs.org/moment
+458 silly get cb [ 200,
+458 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+458 silly get     etag: '"Q1RBIX0E5P3JPP0X4CXNLBHZ"',
+458 silly get     'content-type': 'application/json',
+458 silly get     'cache-control': 'max-age=60',
+458 silly get     'content-length': '59454',
+458 silly get     'accept-ranges': 'bytes',
+458 silly get     date: 'Mon, 18 May 2015 20:48:27 GMT',
+458 silly get     via: '1.1 varnish',
+458 silly get     age: '45',
+458 silly get     connection: 'keep-alive',
+458 silly get     'x-served-by': 'cache-jfk1029-JFK',
+458 silly get     'x-cache': 'HIT',
+458 silly get     'x-cache-hits': '1',
+458 silly get     'x-timer': 'S1431982107.591738,VS0,VE0',
+458 silly get     vary: 'Accept' } ]
+459 verbose get saving moment to /home/ignacio/.npm/registry.npmjs.org/moment/.cache.json
+460 silly addNameRange number 2 { name: 'moment', range: '>=2.9.0 <2.10.0', hasData: true }
+461 silly addNameRange versions [ 'moment',
+461 silly addNameRange   [ '1.0.0',
+461 silly addNameRange     '1.0.1',
+461 silly addNameRange     '1.1.0',
+461 silly addNameRange     '1.1.1',
+461 silly addNameRange     '1.2.0',
+461 silly addNameRange     '1.3.0',
+461 silly addNameRange     '1.4.0',
+461 silly addNameRange     '1.5.0',
+461 silly addNameRange     '1.5.1',
+461 silly addNameRange     '1.6.0',
+461 silly addNameRange     '1.6.1',
+461 silly addNameRange     '1.6.2',
+461 silly addNameRange     '1.7.0',
+461 silly addNameRange     '1.7.1',
+461 silly addNameRange     '1.7.2',
+461 silly addNameRange     '2.0.0',
+461 silly addNameRange     '2.1.0',
+461 silly addNameRange     '2.2.1',
+461 silly addNameRange     '2.3.0',
+461 silly addNameRange     '2.3.1',
+461 silly addNameRange     '2.4.0',
+461 silly addNameRange     '2.5.0',
+461 silly addNameRange     '2.5.1',
+461 silly addNameRange     '2.6.0',
+461 silly addNameRange     '2.7.0',
+461 silly addNameRange     '2.8.1',
+461 silly addNameRange     '2.8.2',
+461 silly addNameRange     '2.8.3',
+461 silly addNameRange     '2.8.4',
+461 silly addNameRange     '2.9.0',
+461 silly addNameRange     '2.10.2',
+461 silly addNameRange     '2.10.3' ] ]
+462 silly addNamed moment@2.9.0
+463 verbose addNamed "2.9.0" is a plain semver version for moment
+464 silly mapToRegistry name moment
+465 silly mapToRegistry using default registry
+466 silly mapToRegistry registry https://registry.npmjs.org/
+467 silly mapToRegistry uri https://registry.npmjs.org/moment
+468 verbose addRemoteTarball https://registry.npmjs.org/moment/-/moment-2.9.0.tgz not in flight; adding
+469 verbose addRemoteTarball [ 'https://registry.npmjs.org/moment/-/moment-2.9.0.tgz',
+469 verbose addRemoteTarball   '77ec1175fa294f42627f10c8e6de6302c036f6d5' ]
+470 info retry fetch attempt 1 at 14:48:28
+471 info attempt registry request try #1 at 14:48:28
+472 http fetch GET https://registry.npmjs.org/moment/-/moment-2.9.0.tgz
+473 http fetch 200 https://registry.npmjs.org/parse-database-url/-/parse-database-url-0.2.2.tgz
+474 silly fetchAndShaCheck shasum 48615ae7a7c0fc77e3294d23542a6a5273c3570b
+475 verbose addTmpTarball /tmp/npm-15602-c0f60b8e/registry.npmjs.org/parse-database-url/-/parse-database-url-0.2.2.tgz not in flight; adding
+476 verbose addTmpTarball already have metadata; skipping unpack for parse-database-url@0.2.2
+477 silly cache afterAdd parse-database-url@0.2.2
+478 verbose afterAdd /home/ignacio/.npm/parse-database-url/0.2.2/package/package.json not in flight; writing
+479 verbose afterAdd /home/ignacio/.npm/parse-database-url/0.2.2/package/package.json written
+480 http fetch 200 https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz
+481 silly fetchAndShaCheck shasum da3ea74686fa21a19a111c326e90eb15a0196686
+482 verbose addTmpTarball /tmp/npm-15602-c0f60b8e/registry.npmjs.org/optimist/-/optimist-0.6.1.tgz not in flight; adding
+483 verbose addTmpTarball already have metadata; skipping unpack for optimist@0.6.1
+484 silly cache afterAdd optimist@0.6.1
+485 verbose afterAdd /home/ignacio/.npm/optimist/0.6.1/package/package.json not in flight; writing
+486 verbose afterAdd /home/ignacio/.npm/optimist/0.6.1/package/package.json written
+487 http fetch 200 https://registry.npmjs.org/pkginfo/-/pkginfo-0.3.0.tgz
+488 silly fetchAndShaCheck shasum 726411401039fe9b009eea86614295d5f3a54276
+489 verbose addTmpTarball /tmp/npm-15602-c0f60b8e/registry.npmjs.org/pkginfo/-/pkginfo-0.3.0.tgz not in flight; adding
+490 verbose addTmpTarball already have metadata; skipping unpack for pkginfo@0.3.0
+491 silly cache afterAdd pkginfo@0.3.0
+492 verbose afterAdd /home/ignacio/.npm/pkginfo/0.3.0/package/package.json not in flight; writing
+493 verbose afterAdd /home/ignacio/.npm/pkginfo/0.3.0/package/package.json written
+494 http fetch 200 https://registry.npmjs.org/mysql/-/mysql-2.5.5.tgz
+495 http fetch 200 https://registry.npmjs.org/dotenv/-/dotenv-0.5.1.tgz
+496 silly fetchAndShaCheck shasum 87d181f76102afd1a2b85c277ddd8b8795dc565b
+497 verbose addTmpTarball /tmp/npm-15602-c0f60b8e/registry.npmjs.org/dotenv/-/dotenv-0.5.1.tgz not in flight; adding
+498 verbose addTmpTarball already have metadata; skipping unpack for dotenv@0.5.1
+499 silly cache afterAdd dotenv@0.5.1
+500 verbose afterAdd /home/ignacio/.npm/dotenv/0.5.1/package/package.json not in flight; writing
+501 verbose afterAdd /home/ignacio/.npm/dotenv/0.5.1/package/package.json written
+502 http 200 https://registry.npmjs.org/pg
+503 silly get cb [ 200,
+503 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+503 silly get     etag: '"CWJANWM65876VPHTH0EJXL8F5"',
+503 silly get     'content-type': 'application/json',
+503 silly get     'cache-control': 'max-age=60',
+503 silly get     'content-length': '132370',
+503 silly get     'accept-ranges': 'bytes',
+503 silly get     date: 'Mon, 18 May 2015 20:48:27 GMT',
+503 silly get     via: '1.1 varnish',
+503 silly get     age: '45',
+503 silly get     connection: 'keep-alive',
+503 silly get     'x-served-by': 'cache-jfk1027-JFK',
+503 silly get     'x-cache': 'HIT',
+503 silly get     'x-cache-hits': '6',
+503 silly get     'x-timer': 'S1431982107.611780,VS0,VE0',
+503 silly get     vary: 'Accept' } ]
+504 verbose get saving pg to /home/ignacio/.npm/registry.npmjs.org/pg/.cache.json
+505 silly addNameRange number 2 { name: 'pg', range: '>=4.2.0 <4.3.0', hasData: true }
+506 silly addNameRange versions [ 'pg',
+506 silly addNameRange   [ '0.4.1',
+506 silly addNameRange     '0.5.0',
+506 silly addNameRange     '0.5.1',
+506 silly addNameRange     '0.5.2',
+506 silly addNameRange     '0.5.3',
+506 silly addNameRange     '0.5.4',
+506 silly addNameRange     '0.5.5',
+506 silly addNameRange     '0.5.6',
+506 silly addNameRange     '0.5.7',
+506 silly addNameRange     '0.5.8',
+506 silly addNameRange     '0.6.0',
+506 silly addNameRange     '0.6.1',
+506 silly addNameRange     '0.6.2',
+506 silly addNameRange     '0.6.3',
+506 silly addNameRange     '0.6.4',
+506 silly addNameRange     '0.6.5',
+506 silly addNameRange     '0.6.6',
+506 silly addNameRange     '0.6.7',
+506 silly addNameRange     '0.6.8',
+506 silly addNameRange     '0.6.9',
+506 silly addNameRange     '0.6.10',
+506 silly addNameRange     '0.6.11',
+506 silly addNameRange     '0.6.12',
+506 silly addNameRange     '0.6.13',
+506 silly addNameRange     '0.6.14',
+506 silly addNameRange     '0.6.15',
+506 silly addNameRange     '0.6.16',
+506 silly addNameRange     '0.6.17',
+506 silly addNameRange     '0.6.18',
+506 silly addNameRange     '0.7.0',
+506 silly addNameRange     '0.7.1',
+506 silly addNameRange     '0.7.2',
+506 silly addNameRange     '0.8.0',
+506 silly addNameRange     '0.8.1',
+506 silly addNameRange     '0.8.2',
+506 silly addNameRange     '0.8.3',
+506 silly addNameRange     '0.8.4',
+506 silly addNameRange     '0.8.6',
+506 silly addNameRange     '0.8.7',
+506 silly addNameRange     '0.8.8',
+506 silly addNameRange     '0.9.0',
+506 silly addNameRange     '0.10.0',
+506 silly addNameRange     '0.10.2',
+506 silly addNameRange     '0.11.1',
+506 silly addNameRange     '0.11.2',
+506 silly addNameRange     '0.11.3',
+506 silly addNameRange     '0.12.0',
+506 silly addNameRange     '0.12.1',
+506 silly addNameRange     '0.12.3',
+506 silly addNameRange     '0.13.0',
+506 silly addNameRange     '0.13.1',
+506 silly addNameRange     '0.13.3',
+506 silly addNameRange     '0.14.0',
+506 silly addNameRange     '0.14.1',
+506 silly addNameRange     '0.15.0',
+506 silly addNameRange     '0.15.1',
+506 silly addNameRange     '1.0.0',
+506 silly addNameRange     '1.0.1',
+506 silly addNameRange     '1.0.2',
+506 silly addNameRange     '1.0.3',
+506 silly addNameRange     '1.0.4',
+506 silly addNameRange     '1.1.0',
+506 silly addNameRange     '1.1.1',
+506 silly addNameRange     '1.1.2',
+506 silly addNameRange     '1.1.3',
+506 silly addNameRange     '1.2.0',
+506 silly addNameRange     '1.3.0',
+506 silly addNameRange     '2.0.0',
+506 silly addNameRange     '2.1.0',
+506 silly addNameRange     '2.2.0',
+506 silly addNameRange     '2.3.0',
+506 silly addNameRange     '2.3.1',
+506 silly addNameRange     '2.4.0',
+506 silly addNameRange     '2.5.0',
+506 silly addNameRange     '2.5.1',
+506 silly addNameRange     '2.6.0',
+506 silly addNameRange     '2.6.1',
+506 silly addNameRange     '2.6.2',
+506 silly addNameRange     '2.7.0',
+506 silly addNameRange     '2.8.0',
+506 silly addNameRange     '2.8.1',
+506 silly addNameRange     '2.8.2',
+506 silly addNameRange     '2.8.3',
+506 silly addNameRange     '2.8.4',
+506 silly addNameRange     '2.8.5',
+506 silly addNameRange     '2.9.0',
+506 silly addNameRange     '2.10.0',
+506 silly addNameRange     '2.11.0',
+506 silly addNameRange     '2.11.1',
+506 silly addNameRange     '3.0.2',
+506 silly addNameRange     '3.0.3',
+506 silly addNameRange     '3.1.0',
+506 silly addNameRange     '3.2.0',
+506 silly addNameRange     '3.3.0',
+506 silly addNameRange     '3.4.0',
+506 silly addNameRange     '3.4.1',
+506 silly addNameRange     '3.4.2',
+506 silly addNameRange     '3.4.3',
+506 silly addNameRange     '3.4.4',
+506 silly addNameRange     '3.4.5',
+506 silly addNameRange     '3.5.0',
+506 silly addNameRange     '3.6.0',
+506 silly addNameRange     '4.0.0-beta2',
+506 silly addNameRange     '3.6.1',
+506 silly addNameRange     '3.6.2',
+506 silly addNameRange     '3.6.3',
+506 silly addNameRange     '4.0.0',
+506 silly addNameRange     '4.1.0',
+506 silly addNameRange     '4.1.1',
+506 silly addNameRange     '4.2.0',
+506 silly addNameRange     '4.3.0' ] ]
+507 silly addNamed pg@4.2.0
+508 verbose addNamed "4.2.0" is a plain semver version for pg
+509 silly mapToRegistry name pg
+510 silly mapToRegistry using default registry
+511 silly mapToRegistry registry https://registry.npmjs.org/
+512 silly mapToRegistry uri https://registry.npmjs.org/pg
+513 verbose addRemoteTarball https://registry.npmjs.org/pg/-/pg-4.2.0.tgz not in flight; adding
+514 verbose addRemoteTarball [ 'https://registry.npmjs.org/pg/-/pg-4.2.0.tgz',
+514 verbose addRemoteTarball   'c225862d0aad4f4710f62e64882409a717a5dc62' ]
+515 info retry fetch attempt 1 at 14:48:29
+516 info attempt registry request try #1 at 14:48:29
+517 http fetch GET https://registry.npmjs.org/pg/-/pg-4.2.0.tgz
+518 http 200 https://registry.npmjs.org/async
+519 silly get cb [ 200,
+519 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+519 silly get     etag: '"5WBH10TS6I3Z5E4V0QM6I4LKO"',
+519 silly get     'content-type': 'application/json',
+519 silly get     'cache-control': 'max-age=60',
+519 silly get     'content-length': '102365',
+519 silly get     'accept-ranges': 'bytes',
+519 silly get     date: 'Mon, 18 May 2015 20:48:27 GMT',
+519 silly get     via: '1.1 varnish',
+519 silly get     age: '12',
+519 silly get     connection: 'keep-alive',
+519 silly get     'x-served-by': 'cache-jfk1022-JFK',
+519 silly get     'x-cache': 'HIT',
+519 silly get     'x-cache-hits': '4',
+519 silly get     'x-timer': 'S1431982107.605475,VS0,VE0',
+519 silly get     vary: 'Accept' } ]
+520 verbose get saving async to /home/ignacio/.npm/registry.npmjs.org/async/.cache.json
+521 silly addNameRange number 2 { name: 'async', range: '>=0.9.0 <0.10.0', hasData: true }
+522 silly addNameRange versions [ 'async',
+522 silly addNameRange   [ '0.1.0',
+522 silly addNameRange     '0.1.1',
+522 silly addNameRange     '0.1.2',
+522 silly addNameRange     '0.1.3',
+522 silly addNameRange     '0.1.4',
+522 silly addNameRange     '0.1.5',
+522 silly addNameRange     '0.1.6',
+522 silly addNameRange     '0.1.7',
+522 silly addNameRange     '0.1.8',
+522 silly addNameRange     '0.1.9',
+522 silly addNameRange     '0.1.10',
+522 silly addNameRange     '0.1.11',
+522 silly addNameRange     '0.1.12',
+522 silly addNameRange     '0.1.13',
+522 silly addNameRange     '0.1.14',
+522 silly addNameRange     '0.1.15',
+522 silly addNameRange     '0.1.16',
+522 silly addNameRange     '0.1.17',
+522 silly addNameRange     '0.1.18',
+522 silly addNameRange     '0.1.19',
+522 silly addNameRange     '0.1.20',
+522 silly addNameRange     '0.1.21',
+522 silly addNameRange     '0.1.22',
+522 silly addNameRange     '0.2.0',
+522 silly addNameRange     '0.2.1',
+522 silly addNameRange     '0.2.2',
+522 silly addNameRange     '0.2.3',
+522 silly addNameRange     '0.2.4',
+522 silly addNameRange     '0.2.5',
+522 silly addNameRange     '0.2.6',
+522 silly addNameRange     '0.2.7',
+522 silly addNameRange     '0.2.8',
+522 silly addNameRange     '0.2.9',
+522 silly addNameRange     '0.2.10',
+522 silly addNameRange     '0.3.0',
+522 silly addNameRange     '0.4.0',
+522 silly addNameRange     '0.4.1',
+522 silly addNameRange     '0.5.0',
+522 silly addNameRange     '0.6.0',
+522 silly addNameRange     '0.6.1',
+522 silly addNameRange     '0.6.2',
+522 silly addNameRange     '0.7.0',
+522 silly addNameRange     '0.8.0',
+522 silly addNameRange     '0.9.0' ] ]
+523 silly addNamed async@0.9.0
+524 verbose addNamed "0.9.0" is a plain semver version for async
+525 silly mapToRegistry name async
+526 silly mapToRegistry using default registry
+527 silly mapToRegistry registry https://registry.npmjs.org/
+528 silly mapToRegistry uri https://registry.npmjs.org/async
+529 verbose addRemoteTarball https://registry.npmjs.org/async/-/async-0.9.0.tgz not in flight; adding
+530 verbose addRemoteTarball [ 'https://registry.npmjs.org/async/-/async-0.9.0.tgz',
+530 verbose addRemoteTarball   'ac3613b1da9bed1b47510bb4651b8931e47146c7' ]
+531 info retry fetch attempt 1 at 14:48:29
+532 info attempt registry request try #1 at 14:48:29
+533 http fetch GET https://registry.npmjs.org/async/-/async-0.9.0.tgz
+534 silly fetchAndShaCheck shasum 02a1c4d0617fb771d85c15fcf24d108f5a62f648
+535 verbose addTmpTarball /tmp/npm-15602-c0f60b8e/registry.npmjs.org/mysql/-/mysql-2.5.5.tgz not in flight; adding
+536 verbose addTmpTarball already have metadata; skipping unpack for mysql@2.5.5
+537 http fetch 200 https://registry.npmjs.org/moment/-/moment-2.9.0.tgz
+538 http 200 https://registry.npmjs.org/sqlite3
+539 silly get cb [ 200,
+539 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+539 silly get     etag: '"2NIU2RZ05UO7Y84S8MTN1FKR7"',
+539 silly get     'content-type': 'application/json',
+539 silly get     'cache-control': 'max-age=60',
+539 silly get     'content-length': '110834',
+539 silly get     'accept-ranges': 'bytes',
+539 silly get     date: 'Mon, 18 May 2015 20:48:27 GMT',
+539 silly get     via: '1.1 varnish',
+539 silly get     age: '0',
+539 silly get     connection: 'keep-alive',
+539 silly get     'x-served-by': 'cache-jfk1026-JFK',
+539 silly get     'x-cache': 'HIT',
+539 silly get     'x-cache-hits': '1',
+539 silly get     'x-timer': 'S1431982107.620837,VS0,VE86',
+539 silly get     vary: 'Accept' } ]
+540 verbose get saving sqlite3 to /home/ignacio/.npm/registry.npmjs.org/sqlite3/.cache.json
+541 silly addNameRange number 2 { name: 'sqlite3', range: '>=3.0.4 <3.1.0', hasData: true }
+542 silly addNameRange versions [ 'sqlite3',
+542 silly addNameRange   [ '2.0.0',
+542 silly addNameRange     '2.0.1',
+542 silly addNameRange     '2.0.2',
+542 silly addNameRange     '2.0.3',
+542 silly addNameRange     '2.0.4',
+542 silly addNameRange     '2.0.5',
+542 silly addNameRange     '2.0.6',
+542 silly addNameRange     '2.0.7',
+542 silly addNameRange     '2.0.8',
+542 silly addNameRange     '2.0.9',
+542 silly addNameRange     '2.0.10',
+542 silly addNameRange     '2.0.11',
+542 silly addNameRange     '2.0.12',
+542 silly addNameRange     '2.0.13',
+542 silly addNameRange     '2.0.14',
+542 silly addNameRange     '2.0.15',
+542 silly addNameRange     '2.0.16',
+542 silly addNameRange     '2.0.17',
+542 silly addNameRange     '2.0.18',
+542 silly addNameRange     '2.1.0',
+542 silly addNameRange     '2.1.1',
+542 silly addNameRange     '2.1.2',
+542 silly addNameRange     '2.1.3',
+542 silly addNameRange     '2.1.4',
+542 silly addNameRange     '2.1.5',
+542 silly addNameRange     '2.1.7',
+542 silly addNameRange     '2.1.8',
+542 silly addNameRange     '2.1.9',
+542 silly addNameRange     '2.1.10',
+542 silly addNameRange     '2.1.11',
+542 silly addNameRange     '2.1.12',
+542 silly addNameRange     '2.1.13',
+542 silly addNameRange     '2.1.14',
+542 silly addNameRange     '2.1.15',
+542 silly addNameRange     '2.1.16',
+542 silly addNameRange     '2.1.17',
+542 silly addNameRange     '2.1.18',
+542 silly addNameRange     '2.1.19',
+542 silly addNameRange     '2.2.0',
+542 silly addNameRange     '2.2.1',
+542 silly addNameRange     '2.2.2',
+542 silly addNameRange     '2.2.3',
+542 silly addNameRange     '2.2.4',
+542 silly addNameRange     '2.2.6',
+542 silly addNameRange     '2.2.7',
+542 silly addNameRange     '3.0.0',
+542 silly addNameRange     '3.0.1',
+542 silly addNameRange     '3.0.2',
+542 silly addNameRange     '3.0.4',
+542 silly addNameRange     '3.0.5',
+542 silly addNameRange     '3.0.6',
+542 silly addNameRange     '3.0.7',
+542 silly addNameRange     '3.0.8' ] ]
+543 silly addNamed sqlite3@3.0.8
+544 verbose addNamed "3.0.8" is a plain semver version for sqlite3
+545 silly mapToRegistry name sqlite3
+546 silly mapToRegistry using default registry
+547 silly mapToRegistry registry https://registry.npmjs.org/
+548 silly mapToRegistry uri https://registry.npmjs.org/sqlite3
+549 verbose addRemoteTarball https://registry.npmjs.org/sqlite3/-/sqlite3-3.0.8.tgz not in flight; adding
+550 verbose addRemoteTarball [ 'https://registry.npmjs.org/sqlite3/-/sqlite3-3.0.8.tgz',
+550 verbose addRemoteTarball   '662d6507426ba2af0cdaf894a1766c8099c0e435' ]
+551 info retry fetch attempt 1 at 14:48:30
+552 info attempt registry request try #1 at 14:48:30
+553 http fetch GET https://registry.npmjs.org/sqlite3/-/sqlite3-3.0.8.tgz
+554 http 200 https://registry.npmjs.org/mongodb
+555 silly get cb [ 200,
+555 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+555 silly get     etag: '"166301WCFW5XA67HSJGF4S67H"',
+555 silly get     'content-type': 'application/json',
+555 silly get     'cache-control': 'max-age=60',
+555 silly get     'content-length': '453547',
+555 silly get     'accept-ranges': 'bytes',
+555 silly get     date: 'Mon, 18 May 2015 20:48:27 GMT',
+555 silly get     via: '1.1 varnish',
+555 silly get     age: '27',
+555 silly get     connection: 'keep-alive',
+555 silly get     'x-served-by': 'cache-jfk1034-JFK',
+555 silly get     'x-cache': 'HIT',
+555 silly get     'x-cache-hits': '1',
+555 silly get     'x-timer': 'S1431982107.631812,VS0,VE2',
+555 silly get     vary: 'Accept' } ]
+556 verbose get saving mongodb to /home/ignacio/.npm/registry.npmjs.org/mongodb/.cache.json
+557 silly addNameRange number 2 { name: 'mongodb', range: '>=1.4.30 <2.0.0', hasData: true }
+558 silly addNameRange versions [ 'mongodb',
+558 silly addNameRange   [ '0.9.4',
+558 silly addNameRange     '0.9.4-4',
+558 silly addNameRange     '0.9.3',
+558 silly addNameRange     '0.9.1',
+558 silly addNameRange     '0.9.2',
+558 silly addNameRange     '0.9.6-7',
+558 silly addNameRange     '0.9.6-8',
+558 silly addNameRange     '0.9.6-9',
+558 silly addNameRange     '0.9.6-10',
+558 silly addNameRange     '0.9.6-11',
+558 silly addNameRange     '0.9.6-12',
+558 silly addNameRange     '0.9.6-13',
+558 silly addNameRange     '0.9.6-14',
+558 silly addNameRange     '0.9.6-15',
+558 silly addNameRange     '0.9.6-16',
+558 silly addNameRange     '0.9.6-17',
+558 silly addNameRange     '0.9.6-18',
+558 silly addNameRange     '0.9.6-19',
+558 silly addNameRange     '0.9.6-20',
+558 silly addNameRange     '0.9.6-21',
+558 silly addNameRange     '0.9.6-22',
+558 silly addNameRange     '0.9.6-23',
+558 silly addNameRange     '0.9.7',
+558 silly addNameRange     '0.9.7-0',
+558 silly addNameRange     '0.9.7-1',
+558 silly addNameRange     '0.9.7-1.1',
+558 silly addNameRange     '0.9.7-1.2',
+558 silly addNameRange     '0.9.7-1.3',
+558 silly addNameRange     '0.9.7-1.4',
+558 silly addNameRange     '0.9.7-2',
+558 silly addNameRange     '0.9.7-2-1',
+558 silly addNameRange     '0.9.7-2-2',
+558 silly addNameRange     '0.9.7-2-3',
+558 silly addNameRange     '0.9.7-2-4',
+558 silly addNameRange     '0.9.7-2-5',
+558 silly addNameRange     '0.9.7-3',
+558 silly addNameRange     '0.9.7-3-1',
+558 silly addNameRange     '0.9.7-3-2',
+558 silly addNameRange     '0.9.7-3-3',
+558 silly addNameRange     '0.9.7-3-4',
+558 silly addNameRange     '0.9.7-3-5',
+558 silly addNameRange     '0.9.8',
+558 silly addNameRange     '0.9.8-1',
+558 silly addNameRange     '0.9.8-2',
+558 silly addNameRange     '0.9.8-3',
+558 silly addNameRange     '0.9.8-4',
+558 silly addNameRange     '0.9.8-5',
+558 silly addNameRange     '0.9.8-6',
+558 silly addNameRange     '0.9.8-7',
+558 silly addNameRange     '0.9.9',
+558 silly addNameRange     '0.9.9-1',
+558 silly addNameRange     '0.9.9-2',
+558 silly addNameRange     '0.9.9-3',
+558 silly addNameRange     '0.9.9-4',
+558 silly addNameRange     '0.9.9-5',
+558 silly addNameRange     '0.9.9-6',
+558 silly addNameRange     '0.9.9-7',
+558 silly addNameRange     '0.9.9-8',
+558 silly addNameRange     '1.0.0',
+558 silly addNameRange     '1.0.1',
+558 silly addNameRange     '1.0.2',
+558 silly addNameRange     '1.1.0-beta',
+558 silly addNameRange     '1.1.0',
+558 silly addNameRange     '1.1.1',
+558 silly addNameRange     '1.1.2',
+558 silly addNameRange     '1.1.3',
+558 silly addNameRange     '1.1.4',
+558 silly addNameRange     '1.1.5',
+558 silly addNameRange     '1.1.6',
+558 silly addNameRange     '1.1.7',
+558 silly addNameRange     '1.1.8',
+558 silly addNameRange     '1.1.9',
+558 silly addNameRange     '1.1.10',
+558 silly addNameRange     '1.1.11',
+558 silly addNameRange     '1.2.0',
+558 silly addNameRange     '1.2.1',
+558 silly addNameRange     '1.2.2',
+558 silly addNameRange     '1.2.3',
+558 silly addNameRange     '1.2.4',
+558 silly addNameRange     '1.2.5',
+558 silly addNameRange     '1.2.6',
+558 silly addNameRange     '1.2.7',
+558 silly addNameRange     '1.2.8',
+558 silly addNameRange     '1.2.9',
+558 silly addNameRange     '1.2.10',
+558 silly addNameRange     '1.2.11',
+558 silly addNameRange     '1.2.12',
+558 silly addNameRange     '1.2.13',
+558 silly addNameRange     '1.2.14',
+558 silly addNameRange     '1.3.0',
+558 silly addNameRange     '1.3.1',
+558 silly addNameRange     '1.3.2',
+558 silly addNameRange     '1.3.3',
+558 silly addNameRange     '1.3.4',
+558 silly addNameRange     '1.3.5',
+558 silly addNameRange     '1.3.6',
+558 silly addNameRange     '1.3.7',
+558 silly addNameRange     '1.3.8',
+558 silly addNameRange     '1.3.9',
+558 silly addNameRange     '1.3.10',
+558 silly addNameRange     '1.3.11',
+558 silly addNameRange     '1.3.12',
+558 silly addNameRange     '1.3.14',
+558 silly addNameRange     '1.3.15',
+558 silly addNameRange     '1.3.17',
+558 silly addNameRange     '1.3.18',
+558 silly addNameRange     '1.3.19',
+558 silly addNameRange     '1.4.0-rc2',
+558 silly addNameRange     '1.3.20',
+558 silly addNameRange     '1.4.0-rc3',
+558 silly addNameRange     '1.3.21',
+558 silly addNameRange     '1.3.22',
+558 silly addNameRange     '1.3.23',
+558 silly addNameRange     '1.4.0-rc4',
+558 silly addNameRange     '1.4.0-rc5',
+558 silly addNameRange     '1.4.0-rc6',
+558 silly addNameRange     '1.4.0-rc7',
+558 silly addNameRange     '1.4.0-rc8',
+558 silly addNameRange     '1.4.0-rc9',
+558 silly addNameRange     '1.4.0-rc10',
+558 silly addNameRange     '1.4.0',
+558 silly addNameRange     '1.4.1',
+558 silly addNameRange     '1.4.2',
+558 silly addNameRange     '1.4.3',
+558 silly addNameRange     '1.4.4',
+558 silly addNameRange     '1.4.5',
+558 silly addNameRange     '1.4.6',
+558 silly addNameRange     '1.4.7',
+558 silly addNameRange     '1.4.8',
+558 silly addNameRange     '1.4.9',
+558 silly addNameRange     '1.4.10',
+558 silly addNameRange     '2.0.0-alpha1',
+558 silly addNameRange     '1.4.11',
+558 silly addNameRange     '1.4.12',
+558 silly addNameRange     '1.4.14',
+558 silly addNameRange     '1.4.15',
+558 silly addNameRange     '1.4.16',
+558 silly addNameRange     '1.4.17',
+558 silly addNameRange     '2.0.0-alpha2',
+558 silly addNameRange     '1.4.18',
+558 silly addNameRange     '2.0.0',
+558 silly addNameRange     '2.0.1',
+558 silly addNameRange     '2.0.2',
+558 silly addNameRange     '1.4.19',
+558 silly addNameRange     '2.0.3',
+558 silly addNameRange     '2.0.4',
+558 silly addNameRange     '2.0.5',
+558 silly addNameRange     '2.0.6',
+558 silly addNameRange     '1.4.20',
+558 silly addNameRange     '1.4.22',
+558 silly addNameRange     '2.0.7',
+558 silly addNameRange     '2.0.8',
+558 silly addNameRange     '2.0.9',
+558 silly addNameRange     '1.4.23',
+558 silly addNameRange     '2.0.10',
+558 silly addNameRange     '1.4.24',
+558 silly addNameRange     '2.0.11',
+558 silly addNameRange     '1.4.25',
+558 silly addNameRange     '2.0.12',
+558 silly addNameRange     '1.4.26',
+558 silly addNameRange     '1.4.27',
+558 silly addNameRange     '1.4.28',
+558 silly addNameRange     '2.0.13',
+558 silly addNameRange     '2.0.14',
+558 silly addNameRange     '1.4.29',
+558 silly addNameRange     '2.0.15',
+558 silly addNameRange     '1.4.30',
+558 silly addNameRange     '2.0.16',
+558 silly addNameRange     '1.4.31',
+558 silly addNameRange     '2.0.17',
+558 silly addNameRange     '1.4.32',
+558 silly addNameRange     '2.0.18',
+558 silly addNameRange     '2.0.19',
+558 silly addNameRange     '1.4.33',
+558 silly addNameRange     '2.0.20',
+558 silly addNameRange     '2.0.21',
+558 silly addNameRange     '1.4.34',
+558 silly addNameRange     '2.0.22',
+558 silly addNameRange     '2.0.23',
+558 silly addNameRange     '1.4.35',
+558 silly addNameRange     '2.0.24',
+558 silly addNameRange     '2.0.25',
+558 silly addNameRange     '2.0.26',
+558 silly addNameRange     '2.0.27',
+558 silly addNameRange     '2.0.28',
+558 silly addNameRange     '2.0.29',
+558 silly addNameRange     '1.4.36',
+558 silly addNameRange     '2.0.30',
+558 silly addNameRange     '1.4.37',
+558 silly addNameRange     '2.0.31' ] ]
+559 silly addNamed mongodb@1.4.37
+560 verbose addNamed "1.4.37" is a plain semver version for mongodb
+561 silly mapToRegistry name mongodb
+562 silly mapToRegistry using default registry
+563 silly mapToRegistry registry https://registry.npmjs.org/
+564 silly mapToRegistry uri https://registry.npmjs.org/mongodb
+565 verbose addRemoteTarball https://registry.npmjs.org/mongodb/-/mongodb-1.4.37.tgz not in flight; adding
+566 verbose addRemoteTarball [ 'https://registry.npmjs.org/mongodb/-/mongodb-1.4.37.tgz',
+566 verbose addRemoteTarball   'b7b68e359a74896c9c61a2939e1c8786f8954cd2' ]
+567 info retry fetch attempt 1 at 14:48:30
+568 info attempt registry request try #1 at 14:48:30
+569 http fetch GET https://registry.npmjs.org/mongodb/-/mongodb-1.4.37.tgz
+570 http fetch 200 https://registry.npmjs.org/pg/-/pg-4.2.0.tgz
+571 http fetch 200 https://registry.npmjs.org/async/-/async-0.9.0.tgz
+572 silly fetchAndShaCheck shasum ac3613b1da9bed1b47510bb4651b8931e47146c7
+573 verbose addTmpTarball /tmp/npm-15602-c0f60b8e/registry.npmjs.org/async/-/async-0.9.0.tgz not in flight; adding
+574 verbose addTmpTarball already have metadata; skipping unpack for async@0.9.0
+575 silly cache afterAdd async@0.9.0
+576 verbose afterAdd /home/ignacio/.npm/async/0.9.0/package/package.json not in flight; writing
+577 verbose afterAdd /home/ignacio/.npm/async/0.9.0/package/package.json written
+578 silly fetchAndShaCheck shasum 77ec1175fa294f42627f10c8e6de6302c036f6d5
+579 verbose addTmpTarball /tmp/npm-15602-c0f60b8e/registry.npmjs.org/moment/-/moment-2.9.0.tgz not in flight; adding
+580 verbose addTmpTarball already have metadata; skipping unpack for moment@2.9.0
+581 silly cache afterAdd moment@2.9.0
+582 verbose afterAdd /home/ignacio/.npm/moment/2.9.0/package/package.json not in flight; writing
+583 verbose afterAdd /home/ignacio/.npm/moment/2.9.0/package/package.json written
+584 silly fetchAndShaCheck shasum c225862d0aad4f4710f62e64882409a717a5dc62
+585 verbose addTmpTarball /tmp/npm-15602-c0f60b8e/registry.npmjs.org/pg/-/pg-4.2.0.tgz not in flight; adding
+586 verbose addTmpTarball already have metadata; skipping unpack for pg@4.2.0
+587 silly cache afterAdd pg@4.2.0
+588 verbose afterAdd /home/ignacio/.npm/pg/4.2.0/package/package.json not in flight; writing
+589 verbose afterAdd /home/ignacio/.npm/pg/4.2.0/package/package.json written
+590 http fetch 200 https://registry.npmjs.org/mongodb/-/mongodb-1.4.37.tgz
+591 http fetch 200 https://registry.npmjs.org/sqlite3/-/sqlite3-3.0.8.tgz
+592 silly fetchAndShaCheck shasum b7b68e359a74896c9c61a2939e1c8786f8954cd2
+593 verbose addTmpTarball /tmp/npm-15602-c0f60b8e/registry.npmjs.org/mongodb/-/mongodb-1.4.37.tgz not in flight; adding
+594 verbose addTmpTarball already have metadata; skipping unpack for mongodb@1.4.37
+595 silly cache afterAdd mongodb@1.4.37
+596 verbose afterAdd /home/ignacio/.npm/mongodb/1.4.37/package/package.json not in flight; writing
+597 verbose afterAdd /home/ignacio/.npm/mongodb/1.4.37/package/package.json written
+598 http fetch 200 https://registry.npmjs.org/final-fs/-/final-fs-1.6.1.tgz
+599 silly fetchAndShaCheck shasum d6dcd92ef6fe4fe8c07abd568c7135610ede3236
+600 verbose addTmpTarball /tmp/npm-15602-c0f60b8e/registry.npmjs.org/final-fs/-/final-fs-1.6.1.tgz not in flight; adding
+601 verbose addTmpTarball already have metadata; skipping unpack for final-fs@1.6.1
+602 silly cache afterAdd final-fs@1.6.1
+603 verbose afterAdd /home/ignacio/.npm/final-fs/1.6.1/package/package.json not in flight; writing
+604 verbose afterAdd /home/ignacio/.npm/final-fs/1.6.1/package/package.json written
+605 silly fetchAndShaCheck shasum 662d6507426ba2af0cdaf894a1766c8099c0e435
+606 verbose addTmpTarball /tmp/npm-15602-c0f60b8e/registry.npmjs.org/sqlite3/-/sqlite3-3.0.8.tgz not in flight; adding
+607 verbose addTmpTarball already have metadata; skipping unpack for sqlite3@3.0.8
+608 silly cache afterAdd sqlite3@3.0.8
+609 verbose afterAdd /home/ignacio/.npm/sqlite3/3.0.8/package/package.json not in flight; writing
+610 verbose afterAdd /home/ignacio/.npm/sqlite3/3.0.8/package/package.json written
+611 verbose about to build /home/ignacio/proyecto/exposicion/node_modules/db-migrate
+612 verbose unlock done using /home/ignacio/.npm/_locks/db-migrate-bdbfc3e87c86864b.lock for /home/ignacio/proyecto/exposicion/node_modules/db-migrate
+613 verbose stack Error: EACCES, mkdir '/home/ignacio/.npm/mysql/2.5.5'
+613 verbose stack     at Error (native)
+614 verbose cwd /home/ignacio/proyecto/exposicion
+615 error Linux 3.13.0-52-generic
+616 error argv "/home/ignacio/.nvm/versions/v0.12.3/bin/node" "/home/ignacio/.nvm/versions/v0.12.3/bin/npm" "install" "db-migrate"
+617 error node v0.12.3
+618 error npm  v2.9.1
+619 error path /home/ignacio/.npm/mysql/2.5.5
+620 error code EACCES
+621 error errno -13
+622 error Error: EACCES, mkdir '/home/ignacio/.npm/mysql/2.5.5'
+622 error     at Error (native)
+622 error  { [Error: EACCES, mkdir '/home/ignacio/.npm/mysql/2.5.5']
+622 error   errno: -13,
+622 error   code: 'EACCES',
+622 error   path: '/home/ignacio/.npm/mysql/2.5.5',
+622 error   parent: 'db-migrate' }
+623 error Please try running this command again as root/Administrator.
+624 verbose exit [ -13, true ]
+625 verbose unbuild node_modules/db-migrate
+626 info preuninstall db-migrate@0.9.14
+627 info uninstall db-migrate@0.9.14
+628 verbose unbuild rmStuff db-migrate@0.9.14 from /home/ignacio/proyecto/exposicion/node_modules
+629 silly gentlyRm /home/ignacio/proyecto/exposicion/node_modules/.bin/db-migrate is being gently removed
+630 silly gentlyRm verifying /home/ignacio/proyecto/exposicion is an npm working directory
+631 silly gentlyRm containing path /home/ignacio/proyecto/exposicion is under npm's control, in /home/ignacio/proyecto/exposicion
+632 silly gentlyRm deletion target /home/ignacio/proyecto/exposicion/node_modules/.bin/db-migrate is under /home/ignacio/proyecto/exposicion
+633 verbose gentlyRm vacuuming from /home/ignacio/proyecto/exposicion/node_modules/.bin/db-migrate up to /home/ignacio/proyecto/exposicion
+634 info postuninstall db-migrate@0.9.14
+635 silly gentlyRm /home/ignacio/proyecto/exposicion/node_modules/db-migrate is being purged from base /home/ignacio/proyecto/exposicion
+636 verbose gentlyRm don't care about contents; nuking /home/ignacio/proyecto/exposicion/node_modules/db-migrate
+637 silly vacuum-fs purging /home/ignacio/proyecto/exposicion/node_modules/db-migrate
+638 silly vacuum-fs quitting because other entries in /home/ignacio/proyecto/exposicion/node_modules

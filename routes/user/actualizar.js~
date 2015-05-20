@@ -1,0 +1,32 @@
+var express = require('express');
+var router = express.Router();
+
+/* GET registrar listing. */
+router.get('/', function(req, res, next) {
+  res.render('user/actualizar',{ title: 'Actualizar usuario' });
+});
+
+app.put('/actualizar',function(req,res){
+	var Id = req.body.id;
+	var Bookname = req.body.bookname;
+	var Authorname = req.body.authorname;
+	var Price = req.body.price;
+	var data = {
+		"error":1,
+		"Books":""
+	};
+	if(!!Id && !!Bookname && !!Authorname && !!Price){
+		connection.query("UPDATE book SET BookName=?, AuthorName=?, Price=? WHERE id=?",[Bookname,Authorname,Price,Id],function(err, rows, fields){
+			if(!!err){
+				data["Books"] = "Error Updating data";
+			}else{
+				data["error"] = 0;
+				data["Books"] = "Updated Book Successfully";
+			}
+			res.json(data);
+		});
+	}else{
+		data["Books"] = "Please provide all required data (i.e : id, Bookname, Authorname, Price)";
+		res.json(data);
+	}
+});
