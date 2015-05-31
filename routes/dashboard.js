@@ -1,31 +1,29 @@
 var express = require('express');
 var router = express.Router();
+var mysql = require('mysql');
+var connection = mysql.createConnection({
+    host: '127.0.0.1',
+    database: 'dbExposicion',
+    user: 'root',
+    password: '42405659i',
+    charset: 'utf8'
+});
+connection.connect(function (err) {
+    if (!err) {
+        console.log("Se ha conectado con éxito a la base de datos...");
+    } else {
+        console.log("Error inesperado al intentar conectar la base de datos. Error: " + err);
+    }
+});
 
 /* GET dashboard listing. */
 router.get('/', function (req, res, next) {
-    res.render('dashboard', {title: 'Dashboard'});
-});
-
-router.get('actualizar/:id', function (req, res) {
-    var id = req.params.id;
-    if (isNaN(id)) {
-        userModel.getUser(id, function (error, data) {
-            if (typeof data !== 'undefined' && data.length > 0) {
-                res.render("index", {
-                    title: "Formulario",
-                    info: data
-                });
-            } else {
-                res.json(404, {"msg": "notExist"});
-            }
-        });
-    } else {
-        res.json(500, {"msg": "The id must be numeric"});
-    }
-});
-router.get("/create", function (req, res) {
-    res.render("registrar", {
-        title: "Nuevo usuario"
+    connection.query("SELECT * FROM usuario", function (err, rows, fields) {
+        if (!err) {
+            res.render('user/dashboard', {tittle: 'Dashboard', usuarios: rows});
+        } else {
+            console.log('Error: ' + err);
+        }
     });
 });
 module.exports = router;

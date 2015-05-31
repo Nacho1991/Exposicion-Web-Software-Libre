@@ -1,0 +1,73 @@
+extends layout
+
+block content
+    nav(class="navbar navbar-default")
+        div(class="container-fluid")
+            div(class="navbar-header")
+                a(class="navbar-brand")|Universidad Técnica Nacional
+            div(class="collapse navbar-collapse")
+                ul(class="nav navbar-nav")
+                    li(class="active")
+                        a(href="#")|Dashboard
+                ul(class="nav navbar-nav navbar-right")
+                    li(class="dropdown")
+                        a(href="#", class="dropdown-toggle", data-toggle="dropdown",role="button", aria-expanded="false")|Nombre de usuario
+                            span(class="caret")
+                        ul(class="dropdown-menu")
+                            li
+                                a(href="#")|Cerrar sesión
+
+
+    div(class="container")
+        div(class="content")
+            a(href='http://localhost:3000/registrar')
+                button(id="nuevo",class="btn btn-success")|Nuevo
+            br
+            br
+            table(id="userList",class="table table-bordered table-hover" width="50%")
+                thead
+                    tr
+                        th ID
+                        th Nombre
+                        th Apellidos
+                        th Nombre de usuario
+                        th Contraseña
+                        th Opciones
+                tbody
+                each val in usuarios
+                    tr
+                        td=val.id
+                        td=val.nombre
+                        td=val.apellidos
+                        td=val.nombre_usuario
+                        td=val.contrasenna
+                        td
+                            a(href="http://localhost:3000/detalles/"+val.id)
+                                button(name=val.id,id="detalles",class="btn btn-primary")| Ver detalles
+                            button(name=val.id,id="modificar",class="btn btn-warning")| Modificar
+                            a(href="http://localhost:3000/eliminar/"+val.id)
+                                button(name=val.id,id="eliminar",class="btn btn-danger")| Eliminar
+
+    div.modal.fade(tabindex="-1",role="dialog",aria-labelledby="myModalLabel",aria-hidden="true",id="detalles")
+        div.modal-dialog
+            div.modal-content
+                div.modal-header
+                    button(type="button",class="close",data-dismiss="modal",aria-label="Close")
+                        span(aria-hidden="true") x
+                    h3 Detalles del usuario
+                div.modal-body
+                    label(for="nombre") Nombre:
+                        input(id="nombre",type="text",value="").form-control
+                    label(for="apellidos") Apellidos:
+                        input(id="apellidos",type="text",value="").form-control
+                    label(for="nombreusuario") Nombre de usuario:
+                        input(id="nombreusuario",value="",type="text").form-control
+                    label(for="contrsenna") Contraseña:
+                        input(id="contrasenna",value="",type="password").form-control
+                div.modal-footer
+                    button(type="button", class="btn btn-success", data-dismiss="modal", aria-hidden="true")| Salir
+
+    script(type='text/javascript').
+        $(document).ready(function () {
+
+        });

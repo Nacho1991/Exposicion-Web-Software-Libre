@@ -18,7 +18,18 @@ router.get('/:id?', function (req, res, next) {
     var id = req.params.id;
     connection.query("SELECT * FROM usuario WHERE Id= " + id, function (err, rows) {
         console.log(rows);
-        res.render('user/actualizar', {tittle: 'Actualizar usuario', usuarios: rows});
+        res.render('user/eliminar', {tittle: 'Eliminar usuario', usuarios: rows});
+    });
+});
+router.delete('/:id?', function (req, res) {
+    var id = req.params.id;
+    connection.query("DELETE FROM usuario WHERE Id = " + id, function (err, rows) {
+        if (!err) {
+            connection.query("SELECT * FROM usuario", function (err, rows) {
+                console.log(rows);
+                res.render('user/dashboard', {tittle: 'Eliminar usuario', usuarios: rows});
+            });
+        }
     });
 });
 module.exports = router;

@@ -3,12 +3,24 @@ var router = express.Router();
 
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get('/', function (req, res, next) {
+    res.render('index', {title: 'Express'});
 });
 
-router.post('/', function(req, res, next) {
-	res.render('user/dashboard',{title:'Dashboard'})
- console.log(req);
+router.post('/', function (req, res, next) {
+    res.render('user/dashboard');
+    console.log(req);
 });
+
+/* GET dashboard listing. */
+router.get('/', function (req, res, next) {
+    connection.query("SELECT * FROM usuario", function (err, rows, fields) {
+        if (!err) {
+            res.render('user/dashboard', {tittle: 'Dashboard', usuarios: rows});
+        } else {
+            console.log('Error: ' + err);
+        }
+    });
+});
+
 module.exports = router;
