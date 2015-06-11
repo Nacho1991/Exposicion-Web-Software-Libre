@@ -1,29 +1,47 @@
 extends layout
 
 block content
-		form(action="/user/dashboard" method="post")#loginform.form-horizontal
-			div(class="container")
-				div(id="loginbox",style="margin-top:50px;",class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2")
-					div(class="panel panel-info")
-						div(class="panel-heading")
-							div(class="panel-title")|Iniciar sesión
-						div(class="panel-body")
-							div(class="input-group")
-								span(class="input-group-addon")
-									i(class="glyphicon glyphicon-user")
-								input(placeholder="Dígite su nombre usuario", type="text", name="nombreusuario", id='nombreusuario').form-control
-							br
-							div(class="input-group")
-								span(class="input-group-addon")
-									i(class="glyphicon glyphicon-lock")
-								input(placeholder="Dígite su contraseña", type="password", name="contrasenna", id='contrasenna').form-control
-						div(class="panel-footer")
-							center
-								button(class="btn btn-success",type="submit")
-									span(aria-hidden="true" class="glyphicon glyphicon-log-in")|   Entrar
+    form(name="autenticar", method="get", action="/autenticar")#loginform.form-horizontal
+        div(class="container")
+            div(id="loginbox",style="margin-top:50px;",class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2")
+                div(class="panel panel-info")
+                    div(class="panel-heading")
+                        div(class="panel-title")|Iniciar sesión
+                    div(class="panel-body")
+                        div(class="input-group")
+                            span(class="input-group-addon")
+                                i(class="glyphicon glyphicon-user")
+                            input(placeholder="Dígite su nombre usuario", type="text", name="nombreusuario", id='nombreusuario').form-control
+                        br
+                        div(class="input-group")
+                            span(class="input-group-addon")
+                                i(class="glyphicon glyphicon-lock")
+                            input(placeholder="Dígite su contraseña", type="password", name="contrasenna", id='contrasenna').form-control
+                    div(class="panel-footer")
+                        center
+                            button(class="btn btn-primary",type="button" id="prueba")| Prueba
+                            button(class="btn btn-success",type="submit")
+                                span(aria-hidden="true" class="glyphicon glyphicon-log-in")|   Entrar
 
 
+    script(type='text/javascript').
+        $('#prueba').bind('click', function () {
+            var nombreUsaurio = $('#nombreusuario').val();
+            var contrasenna = $('#contrasenna').val();
+            $.ajax({
+                url: 'http://localhost:3000/autenticar',
+                accepts:'',
+                method: 'get',
+                data: { usuario: nombreUsaurio, password: contrasenna},
+                success: function(datos, msgDescripcion, jqXHR){
+                    alert("Ha iniciado sesión");
+                },
+                error:function(datos, msgDescripcion, jqXHR){
+                    alert('error');
+                }
+            });
+        });
 block scripts
-	script(src='/javascripts/bootstrap.min.js')
-	script(src='/javascripts/npm.js')
-	script(src='/javascripts/bootstrap.js')
+    script(src='/javascripts/bootstrap.min.js')
+    script(src='/javascripts/npm.js')
+    script(src='/javascripts/bootstrap.js')

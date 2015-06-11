@@ -67,7 +67,12 @@ block content
                 div.modal-footer
                     button(type="button", class="btn btn-success", data-dismiss="modal", aria-hidden="true")| Salir
 
-    script(type='text/javascript').
-        $(document).ready(function () {
-
+script(type='text/javascript').
+    $(document).ready(function () {
+        $.ajax({
+            url: url,
+            data: data,
+            success: success,
+            dataType: dataType
         });
+    });

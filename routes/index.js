@@ -20,10 +20,33 @@ router.get('/', function (req, res, next) {
     res.render('index', {title: 'Express'});
 });
 
-
 router.get('/registrar', function (req, res, next) {
     res.render('registrar', {tittle: 'Registrar'});
-})
+});
+
+router.get('/autenticar',function(req, res, next){
+	var nombreUsuario = req.params.nombreusuario;
+	var password = req.params.contrasenna;
+	console.log(req);
+	connection.query("SELECT * FROM usuario WHERE nombre_usuario = "+nombreUsuario+" AND contrasenna = "+password,function(err,rows){
+		if(!err){
+			if(rows){
+			connection.query("SELECT * FROM usuario", function (err, rows, fields) {
+                if (!err) {
+                    res.render('dashboard', {tittle: 'Dashboard', usuarios: rows});
+                } else {
+                    console.log('Error: ' + err);
+                }
+            });
+		}else{
+    		res.render('index', {title: 'Express'});
+		}
+		}else{
+			console.log(err);
+		}
+	});
+});
+
 
 router.post('/new', function (req, res) {
     var nombre = req.body.nombre;
@@ -44,7 +67,7 @@ router.post('/new', function (req, res) {
             console.log(err);
         }
     });
-})
+});
 
 /* GET dashboard listing. */
 router.get('/dashboard', function (req, res, next) {
@@ -65,7 +88,7 @@ router.get('/detalles/:id', function (req, res, next) {
     });
 });
 /* GET registrar listing. */
-router.get('/actualizar/:id?', function (req, res, next) {
+router.put('/actualizar', function (req, res, next) {
     var id = req.params.id;
     connection.query("SELECT * FROM usuario WHERE Id= " + id, function (err, rows) {
         console.log(rows);
